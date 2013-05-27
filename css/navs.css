@@ -1,0 +1,21 @@
+/**
+ * @file fish navs.css
+ */
+
+/**
+ * nav
+ ***************************/
+.nav{list-style: none;border-bottom:2px solid #28e;background: #EEF8FF;height: 32px;line-height: 32px;margin:0;padding:0;}
+.nav li{display: block;float: left;}
+.nav li a{display: block;float: left;padding:0 20px;color: #333;line-height: 32px;}
+.nav li a:hover{text-decoration: none;color: #f60;}
+.nav li.active a{background:#28e;color: #fff;font-weight: 700;}
+.nav li.active a:hover{color: #fff;}
+
+/*主导航*/
+.nav.nav-main{height: 40px;line-height: 40px;background: #2b98db;border-bottom:none;}
+.nav.nav-main li a{color: #fff;font-size: 16px;line-height: 40px;height: 40px;}
+.nav.nav-main li a:hover{color: #FFA73D;}
+.nav.nav-main li.active a{background:#fff;color: #333;font-weight: 500;border-top: 2px solid #FFA73D;height: 38px;line-height: 38px;}
+.nav.nav-main li.divider{padding:6px 0;height: 28px;}
+.nav.nav-main li.divider a{padding:0;border-right:1px dashed #4DBAE3;width: 1px;height: 28px;line-height: 28px;}

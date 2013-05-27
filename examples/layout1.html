@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>layout - fish front-end framework</title>
+  <link rel="stylesheet" href="../css/fish.css">
+  <link rel="stylesheet" href="css/examples.css">
+  <style>
+    body{text-align: center;}
+
+  </style>
+</head>
+<body>
+
+<h1>12栏布局</h1>
+<h2>默认栅格系统</h2>
+<div class="container">
+
+</div>
+
+
+<h2>偏移的栅格系统</h2>
+<div class="container">
+
+</div>
+
+<h2>嵌套的布局系统</h2>
+<div class="container">
+  <div class="row">
+    <div class="span8">
+      <div class="layout-unit">
+        level1 8
+        <div class="row">
+          <div class="span4">
+            <div class="layout-unit">level2 4</div>
+          </div>
+          <div class="span4">
+            <div class="layout-unit">level2 4</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="span4">
+      <div class="layout-unit">3</div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

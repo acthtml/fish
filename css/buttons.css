@@ -1,0 +1,48 @@
+/**
+ * @file fish buttons.css
+ *
+ * 这是一个临时的方案。
+ *
+ * 对于现在的按钮没有很好的定义，差不多只是从视觉上分类，并没有从语义上有良好的
+ * 定义。这里展示的只不过是一种思路，一种实践方式。
+ *
+ * @TODO 以最小的代价兼容ie6。
+ */
+
+.btn{display: inline-block;*zoom:1;*display: inline;color: #fff;width: 71px;height: 25px;font:14px/25px \5B8B\4F53, sans-serif;background: url(../images/btns.png) no-repeat 0 -69px; text-align: center;}
+.btn:hover{text-decoration: none;background-position: -120px -69px;}
+
+.btn.btn-primary{background-position: -240px -69px;}
+.btn.btn-primary:hover{background-position: -360px -69px;}
+
+.btn.btn-weak{background-position: -480px -69px;width: 73px;color: #666;}
+.btn.btn-weak:hover{background-position: -600px -69px;}
+
+.btn.btn-link{color: #005bb3;background: none;}
+.btn.btn-link:hover{text-decoration: underline;}
+
+
+/**
+ * size
+ ****************/
+.btn.btn-small{width: 61px;height: 23px;line-height: 23px;background-position: 0 -94px;}
+.btn.btn-large{width: 97px;height: 31px;font:18px/31px "Microsoft Yahei";background-position: 0 -38px;}
+.btn.btn-xlarge{width: 120px;height: 38px;font: 20px/38px "Microsoft Yahei";background-position: 0 0;}
+.btn.btn-small:hover{width: 61px;height: 23px;line-height: 23px;background-position: -120px -94px;}
+.btn.btn-large:hover{width: 97px;height: 31px;font:18px/31px "Microsoft Yahei";background-position: -120px -38px;}
+.btn.btn-xlarge:hover{width: 120px;height: 38px;font: 20px/38px "Microsoft Yahei";background-position: -120px 0;}
+
+.btn.btn-primary.btn-small{background-position: -240px -94px;}
+.btn.btn-primary.btn-large{background-position: -240px -38px;}
+.btn.btn-primary.btn-xlarge{background-position: -240px 0;}
+.btn.btn-primary.btn-small:hover{background-position: -360px -94px;}
+.btn.btn-primary.btn-large:hover{background-position: -360px -38px;}
+.btn.btn-primary.btn-xlarge:hover{background-position: -360px 0;}
+
+
+.btn.btn-weak.btn-small{background-position: -480px -94px;}
+.btn.btn-weak.btn-large{background-position: -480px -38px;}
+.btn.btn-weak.btn-xlarge{background-position: -480px 0;}
+.btn.btn-weak.btn-small:hover{background-position: -600px -94px;}
+.btn.btn-weak.btn-large:hover{background-position: -600px -38px;}
+.btn.btn-weak.btn-xlarge:hover{background-position: -600px 0;}

@@ -1,0 +1,19 @@
+/**
+ * @file fish alerts.css
+ */
+
+/**
+ * alert
+ *******************/
+.alert{border:1px solid #FFD5A1;background: #FFF8EE;padding:9px 20px 9px 9px;}
+.alert .close{position:relative;float: right; right: -11px; top: 4px; display: block;width: 11px;height: 11px;overflow: hidden; background: url(../images/close.png) no-repeat 0 0; cursor: pointer;text-indent: -200000em;}
+.alert .close:hover{background-position: 0 -11px;}
+.alert .alert-title{margin:0 0 5px;}
+.alert p{margin:5px 0 0;}
+
+/*error*/
+.alert.alert-error{border-color: #EED3D7;color: #b94a48;background-color: #F2DEDE;}
+/*success*/
+.alert.alert-success{border-color: #D6E9C6;color: #468847;background-color: #D6E9C6;}
+/*info*/
+.alert.alert-info{border-color: #BCE8F1;color: #3a87ad;background-color: #D9EDF7;}

@@ -1,0 +1,39 @@
+/**
+ * @file fish pager.css
+ */
+
+/**
+ * pager
+ ***************************/
+.pager{font-size: 12px;font-family: \5B8B\4F53, sans-serif;}
+.pager ul{list-style: none;margin:0;padding:0;}
+.pager ul li{display: block;float: left;margin-right: 6px;}
+.pager ul li a,
+.pager ul li span{display: block;float: left;padding:0 9px;height: 22px;overflow: hidden; line-height: 22px; _line-height:24px; border:1px solid #ddd;color: #1679dd;}
+.pager ul li span{color: #ddd;border-color: #ddd;}
+.pager ul li a:hover{border-color: #FFD8A7;background-color: #FFF8EE;color: #f60;text-decoration: none;}
+.pager ul li.active a,
+.pager ul li.active a:hover{color: #fff;border-color: #308FEF;background-color:#28e;font-weight: 700;}
+
+.pager ul .last a,
+.pager ul .next a,
+.pager ul .first a,
+.pager ul .prev a,
+.pager ul .last span,
+.pager ul .next span,
+.pager ul .first span,
+.pager ul .prev span{background: url(../images/arrows.png) no-repeat 0 0;padding-left:19px;}
+
+.pager ul .last a{background-position: right 0;padding-left: 9px;padding-right: 19px;}
+.pager ul .next a{background-position: right -22px;padding-left: 9px;padding-right: 19px;}
+.pager ul .first a{background-position: 0 -44px;}
+.pager ul .prev a{background-position: 0 -66px;}
+.pager ul .last a:hover{background-position: right -88px;padding-left: 9px;padding-right: 19px;}
+.pager ul .next a:hover{background-position: right -110px;padding-left: 9px;padding-right: 19px;}
+.pager ul .first a:hover{background-position: 0 -132px;}
+.pager ul .prev a:hover{background-position: 0 -154px;}
+.pager ul .last span{background-position: right -176px;padding-left: 9px;padding-right: 19px;}
+.pager ul .next span{background-position: right -198px;padding-left: 9px;padding-right: 19px;}
+.pager ul .first span{background-position: 0 -220px;}
+.pager ul .prev span{background-position: 0 -242px;}
+
