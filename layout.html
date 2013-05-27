@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>栅格系统 - Fish前端框架</title>
+  <link rel="stylesheet" href="css/fish.css">
+  <link rel="stylesheet" href="examples/examples.css">
+</head>
+<body class="index">
+  <div id="page-wrapper">
+    <div id="page" class="container">
+      <div id="header">
+        <div class="row">
+          <div class="span12">
+            <h1 id="logo"><a href="./">Fish</a> <small>建立在12列栅格系统、基础css样式、组件之上。</small></h1>
+            <ul class="nav">
+              <li><a href="./">首页</a></li>
+              <li class="active"><a href="./layout.html">栅格系统</a></li>
+              <li><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+              <li><a href="http://172.16.2.107:8080/fwd/" target="_blank">fish核心</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <div class="row">
+          <div class="span12">
+            <div id="hero">
+              <h1>栅格系统</h1>
+              <h2>不求最全，只求通用。</h2>
+              <p>
+                <pre>
+                  .container
+                    .row
+                      .span12
+                    .row
+                      .span4
+                      .span4
+                      .span4
+                </pre>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <h2>默认栅格系统</h2>
+          <div class="row">
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+            <div class="span1">
+              <div class="layout-unit">1</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span3">
+              <div class="layout-unit">3</div>
+            </div>
+            <div class="span3">
+              <div class="layout-unit">3</div>
+            </div>
+            <div class="span3">
+              <div class="layout-unit">3</div>
+            </div>
+            <div class="span3">
+              <div class="layout-unit">3</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span4">
+              <div class="layout-unit">4</div>
+            </div>
+            <div class="span4">
+              <div class="layout-unit">4</div>
+            </div>
+            <div class="span4">
+              <div class="layout-unit">4</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span6">
+              <div class="layout-unit">6</div>
+            </div>
+            <div class="span6">
+              <div class="layout-unit">6</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span12">
+              <div class="layout-unit">12</div>
+            </div>
+          </div>
+
+          <h2>偏移的栅格系统</h2>
+          <div class="row">
+            <div class="span2">
+              <div class="layout-unit">2</div>
+            </div>
+            <div class="span8 offset2">
+              <div class="layout-unit">8 offset2</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span4">
+              <div class="layout-unit">4</div>
+            </div>
+            <div class="span4 offset4">
+              <div class="layout-unit">4 offset4</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="span9">
+              <div class="layout-unit">9</div>
+            </div>
+            <div class="span2 offset1">
+              <div class="layout-unit">2 offset1</div>
+            </div>
+          </div>
+
+          <h2>嵌套的栅格系统</h2>
+          <div class="row">
+            <div class="span8">
+              <div class="layout-unit">
+                level1 8
+                <div class="row">
+                  <div class="span4">
+                    <div class="layout-unit">level2 4</div>
+                  </div>
+                  <div class="span4">
+                    <div class="layout-unit">level2 4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="span4">
+              <div class="layout-unit">3</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="row">
+          <div class="span8">
+            &copy;2013 同程网
+          </div>
+          <div class="span4">
+            <ul class="inline">
+              <li><a href="./">首页</a></li>
+              <li><a href="./layout.html">脚手架</a></li>
+              <li><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

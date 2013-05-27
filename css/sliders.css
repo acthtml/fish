@@ -1,0 +1,20 @@
+/**
+ * @file fish sliders.css
+ */
+
+/**
+ * sliders
+ *******************/
+.slider{position: relative;}
+.slider .browse{top: 50%;display: block;position: absolute;color: #005bb3;width: 40px;height: 40px;font-size: 60px;line-height: 30px;text-align:center;margin-top:-20px;background-color: #fff;}
+.slider .browse:hover{color: #f60;text-decoration: none;}
+.slider .prev{left: 0;}
+.slider .browse{right: 0;}
+.slider .slider-inner{width: 100%;overflow: hidden;}
+.slider .slider-items{position: relative;width: 200000em;}
+.slider .slider-item{float: left;}
+.slider .slider-nav{position: absolute;bottom:20px;margin:0;padding:0;right: 0;}
+.slider .slider-nav li{float: left;width: 15px;height: 15px;display: block;margin-right: 15px}
+.slider .slider-nav li a{display: block;background-color: #f60;width: 15px;height: 15px;}
+.slider .slider-nav li.active a,
+.slider .slider-nav li a:hover{background: #fff;}

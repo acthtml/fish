@@ -1,0 +1,14 @@
+/**
+ * @file fish tooltip.css
+ */
+
+/**
+ * tooltip
+ *******************/
+.tooltip{padding:5px;position: absolute;font-size: 12px;}
+.tooltip .tooltip-arrow{position: absolute;top: 0;left: 50%;margin-left:-5px;width: 11px;height: 6px;background: url(../images/tooltip-arrows.png) no-repeat 0 0;}
+.tooltip .tooltip-content{border:1px solid #FFD5A1;background: #FFF8EE;padding:5px 10px;}
+
+.tooltip.tooltip-right .tooltip-arrow{left:auto;right: 0;top: 50%;margin-top: -5px;margin-left:0; background-position: right -6px;width: 6px;height: 11px;}
+.tooltip.tooltip-bottom .tooltip-arrow{top:auto;bottom:0;background-position: 0 -17px;}
+.tooltip.tooltip-left .tooltip-arrow{right: auto;left:0;top: 50%;margin-top: -5px;margin-left:0;background-position: 0 -23px;width: 6px;height: 11px;}

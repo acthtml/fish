@@ -1,78 +1,100 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <title>fish.github.com by acthtml</title>
-  </head>
-
-  <body>
-    <header>
-      <div class="inner">
-        <h1>fish.github.com</h1>
-        <h2>The fish front-end framework.</h2>
-        <a href="https://github.com/acthtml/fish.github.com" class="button"><small>View project on</small>GitHub</a>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fish前端框架</title>
+  <link rel="stylesheet" href="css/fish.css">
+  <link rel="stylesheet" href="examples/examples.css">
+</head>
+<body class="index">
+  <div id="page-wrapper">
+    <div id="page" class="container">
+      <div id="header">
+        <div class="row">
+          <div class="span12">
+            <h1 id="logo"><a href="./">Fish</a> <small>建立在12列栅格系统、基础css样式、组件之上。</small></h1>
+            <ul class="nav">
+              <li class="active"><a href="./">首页</a></li>
+              <li><a href="./layout.html">栅格系统</a></li>
+              <li><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+              <li><a href="http://172.16.2.107:8080/fwd/" target="_blank">fish核心</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header>
+      <div id="main">
+        <div class="row">
+          <div class="span12">
+            <div id="hero">
+              <h1>抛砖引玉而已。</h1>
+              <h2>这里只是些最常用的、最基本的元素。目的是当以后碰到类似元素时，有个方案的参考罢了。</h2>
+              <p>东西还缺很多，大家要一起维护了才能用到实际项目中。</p>
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div class="row">
+            <div class="span3">
+              <a href="./layout.html" target="_blank"><img src="images/layout.png" alt=""></a>
+              <h5><a href="./layout.html" target="_blank">栅格系统</a></h5>
+              <p>简单、粗暴的12栏布局。<br> <small>支持1栏、2栏、3栏、4栏、6栏...布局。</small></p>
+            </div>
+            <div class="span3">
+              <a href="./basic.html" target="_blank"><img src="images/basic.png" alt=""></a>
+              <h5><a href="./basic.html" target="_blank">基础css样式</a></h5>
+              <p>构成网页的基本元素。</p>
+              <ul class="inline">
+                <li><a href="./basic.html./basic.html#head">标题</a></li>
+                <li><a href="./basic.html#list">列表</a></li>
+                <li><a href="./basic.html#paragraph">段落</a></li>
+                <li><a href="./basic.html#code">代码</a></li>
+                <li><a href="./basic.html#table">表格</a></li>
+                <li><a href="./basic.html#form">表单</a></li>
+                <li><a href="./basic.html#button">按钮</a></li>
+              </ul>
+            </div>
+            <div class="span3">
+              <a href="./components.html" target="_blank"><img src="images/components.png" alt=""></a>
+              <h5><a href="./components.html" target="_blank">组件</a></h5>
+              <ul class="inline">
+                <li><a href="./components.html#nav">导航</a></li>
+                <li><a href="./components.html#tab">tab</a></li>
+                <li><a href="./components.html#pager">分页</a></li>
+                <li><a href="./components.html#overlays">弹框</a></li>
+                <li><a href="./components.html#tooltip">工具提示</a></li>
+                <li><a href="./components.html#popover">弹出提示</a></li>
+                <li><a href="./components.html#alert">警告框</a></li>
+                <li><a href="./components.html#slider">幻灯</a></li>
+              </ul>
 
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/acthtml/fish.github.com/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/acthtml/fish.github.com/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/acthtml/fish.github.com"></a> is maintained by <a href="https://github.com/acthtml">acthtml</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+            </div>
+            <div class="span3">
+              <a href="./js.html" target="_blank"><img src="images/js.png" alt=""></a>
+              <h5><a href="./js.html" target="_blank">fish插件</a></h5>
+              <p>待完工</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="row">
+          <div class="span8">
+            &copy;2013 同程网
+          </div>
+          <div class="span4">
+            <ul class="inline">
+              <li><a href="./">首页</a></li>
+              <li><a href="./layout.html">脚手架</a></li>
+              <li><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-
-  
-  </body>
+  </div>
+</body>
 </html>
