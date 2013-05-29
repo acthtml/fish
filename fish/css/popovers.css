@@ -1,0 +1,14 @@
+/**
+ * @file fish popovers.css
+ */
+
+/**
+ * popover
+ *******************/
+.popover{padding:5px;position: absolute;font-size: 12px;background: #ddd;}
+.popover .popover-arrow{position: absolute;top: -3px;left: 50%;margin-left:-8px;width: 17px;height: 9px;background: url(../images/popover-arrows.png) no-repeat 0 0;}
+.popover .popover-content{border:1px solid #999;background: #fff;padding:9px;}
+
+.popover.popover-right .popover-arrow{left:auto;right: -3px;top: 50%;margin-top: -8px;margin-left:0; background-position: right -9px;width: 9px;height: 17px;}
+.popover.popover-bottom .popover-arrow{top:auto;bottom:-3px;background-position: 0 -26px;}
+.popover.popover-left .popover-arrow{right: auto;left:-3px;top: 50%;margin-top: -8px;margin-left:0;background-position: 0 -35px;width: 9px;height: 17px;}
