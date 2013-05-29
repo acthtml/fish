@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>基础css样式 - Fish前端框架</title>
+  <link rel="stylesheet" href="css/fish.css">
+  <link rel="stylesheet" href="examples/css/examples.css">
+</head>
+<body>
+  <div id="page-wrapper">
+    <div id="page" class="container">
+      <div id="header">
+        <div class="row">
+          <div class="span12">
+            <h1 id="logo"><a href="./">Fish</a> <small>建立在12列栅格系统、基础css样式、组件之上。</small></h1>
+            <ul class="nav">
+              <li><a href="./">首页</a></li>
+              <li><a href="./layout.html">栅格系统</a></li>
+              <li class="active"><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+              <li><a href="./http://172.16.2.107:8080/fwd/" target="_blank">fish核心</a></li>
+              <li><a href="./comments.html">留言</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="main">
+        <div class="row">
+          <div class="span12">
+            <div id="hero">
+              <h1>基础css样式</h1>
+              <h2>基础的，纯粹的，最美的。</h2>
+            </div>
+          </div>
+        </div>
+        <div id="content">
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="head">标题</h3>
+            </div>
+            <div class="span10">
+              <h1>h1. Heading 1</h1>
+              <h2>h2. Heading 2</h2>
+              <h3>h3. Heading 3</h3>
+              <h4>h4. Heading 4</h4>
+              <h5>h5. Heading 5</h5>
+              <h6>h6. Heading 6</h6>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="list">列表</h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span3">
+                  <h4>无序列表</h4>
+                  <ul>
+                    <li>Django是个好框架</li>
+                    <li>Uliweb是个好框架
+                      <ul>
+                        <li>MVT模型</li>
+                        <li>组织结构</li>
+                        <li>资源共享的处理方式</li>
+                        <li>URL映射</li>
+                      </ul>
+                    </li>
+                    <li>Bottle是个好框架</li>
+                    <li>Rails是个好框架</li>
+                  </ul>
+                </div>
+                <div class="span3">
+                  <h4>有序列表</h4>
+                  <ol>
+                    <li>以热爱祖国为荣，以危害祖国为耻吗？</li>
+                    <li>以服务人民为荣，以背离人民为耻吗？</li>
+                    <li>以崇尚科学为荣，以愚昧无知为耻吗？</li>
+                    <li>以辛勤劳动为荣，以好逸恶劳为耻吗？</li>
+                    <li>以团结互助为荣，以损人利己为耻吗？</li>
+                    <li>以诚实守信为荣，以见利忘义为耻吗？</li>
+                    <li>以遵纪守法为荣，以违法乱纪为耻吗？</li>
+                    <li>以艰苦奋斗为荣，以骄奢淫逸为耻吗？</li>
+                  </ol>
+                </div>
+                <div class="span3">
+                  <h4>定义列表</h4>
+                  <dl>
+                    <dt>定义列表</dt>
+                    <dd>适用于术语的定义/解释</dd>
+                    <dt>Django</dt>
+                    <dd>Django 是一种高级的基于python的web开发框架；</dd>
+                    <dd>推崇一种快速,整洁而且实用主义哲学的设计及开发方式</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span10">
+                  <h4>行内列表</h4>
+                  <ul class="inline">
+                    <li>首页</li>
+                    <li>关于</li>
+                    <li>博客</li>
+                    <li>联系</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="paragraph">段落</h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span10">
+                  <h3 id="section2-1">例1：论语学而篇第一</h3>
+                  <p><small><b>作者：</b><abbr title="名丘，字仲尼">孔子</abbr>（<time>前551年9月28日－前479年4月11日</time>）</small></p>
+                  <h4>本篇引语</h4>
+                  <p>《学而》是《论语》第一篇的篇名。《论语》中各篇一般都是以第一章的前二三个字作为该篇的篇名。《学而》一篇包括16章，内容涉及诸多方面。其中重点是“吾日三省吾身”；“节用而爱人，使民以时”；“礼之用，和为贵”以及仁、孝、信等道德范畴。 </p>
+                  <h4>原文</h4>
+                  <p>子曰<sup><a href="#note1">[1]</a></sup>：“学<sup><a href="#note2">[2]</a></sup>而时习<sup><a href="#note3">[3]</a></sup>之，不亦说<sup><a href="#note4">[4]</a></sup>乎？有朋<sup><a href="#note5">[5]</a></sup>自远方来，不亦乐<sup><a href="#note6">[6]</a></sup>乎？人不知<sup><a href="#note7">[7]</a></sup>，而不愠<sup><a href="#note8">[8]</a></sup>，不亦君子<sup><a href="#note9">[9]</a></sup>乎？” </p>
+                  <h4>注释</h4>
+                  <p>
+                    <small>
+                    <span id="note1">[1]</span> 子：中国古代对于有地位、有学问的男子的尊称，有时也泛称男子。《论语》书中“子曰”的子，都是指孔子而言。<br>
+                    <span id="note2">[2]</span> 学：孔子在这里所讲的“学”，主要是指学习西周的礼、乐、诗、书等传统文化典籍。 <br>
+                    <span id="note3">[3]</span> 时习：在周秦时代，“时”字用作副词，意为“在一定的时候”或者“在适当的时候”。但朱熹在《论语集注》一书中把“时”解释为“时常”。“习”，指演习礼、乐；复习诗、书。也含有温习、实习、练习的意思。 <br>
+                    <span id="note4">[4]</span> 说：音ｙｕè，同悦，愉快、高兴的意思。 <br>
+                    <span id="note5">[5]</span> 有朋：一本作“友朋”。旧注说，“同门曰朋”，即同在一位老师门下学习的叫朋，也就是志同道合的人。 <br>
+                    <span id="note6">[6]</span> 乐：与说有所区别。旧注说，悦在内心，乐则见于外。 <br>
+                    <span id="note7">[7]</span> 人不知：此句不完整，没有说出人不知道什么。缺少宾语。一般而言，知，是了解的意思。人不知，是说别人不了解自己。 <br>
+                    <span id="note8">[8]</span> 愠：音ｙùｎ，恼怒，怨恨。 <br>
+                    <span id="note9">[9]</span> 君子：《论语》书中的君子，有时指有德者，有时指有位者。此处指孔子理想中具有高尚人格的人。
+                    </small>
+                  </p>
+                  <h4>译文</h4>
+                  <p>孔子说：“学了又时常温习和练习，不是很愉快吗？有志同道合的人从远方来，不是很令人高兴的吗？人家不了解我，我也不怨恨、恼怒，不也是一个有德的君子吗？” </p>
+                  <h4>评析</h4>
+                  <p>宋代著名学者<u>朱熹</u>对此章评价极高，说它是“入道之门，积德之基”。本章这三句话是人们非常熟悉的。历来的解释都是：学了以后，又时常温习和练习，不也高兴吗等等。三句话，一句一个意思，前后句子也没有什么连贯性。但也有人认为这样解释不符合原义，指出这里的“学”不是指学习，而是指学说或主张；“时”不能解为时常，而是时代或社会的意思，“习”不是温习，而是使用，引申为采用。而且，这三句话不是孤立的，而是前后相互连贯的。这三句的意思是：自己的学说，要是被社会采用了，那就太高兴了；退一步说，要是没有被社会所采用，可是很多朋友赞同<abbr title="张燕婴">我</abbr>的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？（见《齐鲁学刊》1986年第6期文）这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。</p>
+                  <blockquote>
+                    <p>此外，在对“人不知，而不愠”一句的解释中，也有人认为，“人不知”的后面没有宾语，人家不知道什么呢？当时因为孔子有说话的特定环境，他不需要说出知道什么，别人就可以理解了，却给后人留下一个谜。有人说，这一句是接上一句说的，从远方来的朋友向我求教，我告诉他，他还不懂，我却不怨恨。这样，“人不知”就是“人家不知道我所讲述的”了。这样的解释似乎有些牵强。</p>
+                  </blockquote>
+                  <p>总之，本章提出以学习为乐事，做到人不知而不愠，反映出孔子学而不厌、诲人不倦、注重修养、严格要求自己的主张。这些思想主张在《论语》书中多处可见，有助于对第一章内容的深入了解。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="code">代码 <small>用的不多，只是为了完整性而放进来，在code.css中。</small></h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span4">
+                  <h4>行内代码</h4>
+                  例如，<code>section</code> 应该被做为行级代码包装。
+                </div>
+                <div class="span4">
+                  <h4>块级代码</h4>
+                  <pre>&lt;p&gt;示范文本...&lt;/p&gt;</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="table">表格 <small>这是一个临时的方案</small></h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span2">
+                  <h4>1、默认表格样式</h4>
+                </div>
+                <div class="span8">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>电视剧</th>
+                        <th>类型</th>
+                        <th>年代</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>爱情公寓</td>
+                        <td>都市爱情喜剧</td>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>邪恶力量</td>
+                        <td>悬疑魔幻</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>神探伽俐略</td>
+                        <td>推理探案</td>
+                        <td>2008</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span2">
+                  <h4>2、背景交替的表格样式</h4>
+                </div>
+                <div class="span8">
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>电视剧</th>
+                        <th>类型</th>
+                        <th>年代</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>爱情公寓</td>
+                        <td>都市爱情喜剧</td>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>邪恶力量</td>
+                        <td>悬疑魔幻</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>神探伽俐略</td>
+                        <td>推理探案</td>
+                        <td>2008</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span2">
+                  <h4>3、有边框的表格样式</h4>
+                </div>
+                <div class="span8">
+                  <table class="table table-border">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>电视剧</th>
+                        <th>类型</th>
+                        <th>年代</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>爱情公寓</td>
+                        <td>都市爱情喜剧</td>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>邪恶力量</td>
+                        <td>悬疑魔幻</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>神探伽俐略</td>
+                        <td>推理探案</td>
+                        <td>2008</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span2">
+                  <h4>4、悬停的表格样式</h4>
+                </div>
+                <div class="span8">
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>电视剧</th>
+                        <th>类型</th>
+                        <th>年代</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>爱情公寓</td>
+                        <td>都市爱情喜剧</td>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>邪恶力量</td>
+                        <td>悬疑魔幻</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>神探伽俐略</td>
+                        <td>推理探案</td>
+                        <td>2008</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span2">
+                  <h4>5、紧凑的表格样式</h4>
+                </div>
+                <div class="span8">
+                  <table class="table table-condensed">
+                    <thead>
+                      <tr>
+                        <th>#</th>
+                        <th>电视剧</th>
+                        <th>类型</th>
+                        <th>年代</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>爱情公寓</td>
+                        <td>都市爱情喜剧</td>
+                        <td>2010</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>邪恶力量</td>
+                        <td>悬疑魔幻</td>
+                        <td>2005</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>神探伽俐略</td>
+                        <td>推理探案</td>
+                        <td>2008</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="form">表单</h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span10">
+                  <p>暂时没有很好的表单解决方案，要等图标，按钮确定后，并且解决表单的验证和提交后方能进行这里的开发。</p>
+                 <!--lzz  -->
+                    <p>默认样式</p>
+                <form class="form-example">
+                 <fieldset>
+                    <legend>註冊</legend>
+                    <label>姓名</label>
+                    <input type="text" placeholder="Type something…" class="input-text">
+                    <span class="help-block">友情提示…….</span>
+                    <label class="checkbox">
+                    <input type="checkbox"> 记住……
+                    </label>
+                     <a class="btn" href="#button">提交</a>
+                 </fieldset>
+                </form>
+                  <p>行内表單樣式</p>
+                  <form action="" class="form-inline">
+                    <fieldset>
+                      <label class="control-label" for="inputPassword"><span>*</span>请输入：</label>
+                      <input type="text" placeholder="普通一级输入框" name="" id="" class="input-text">
+                      <input type="text" id="inputEmail" placeholder="普通一级输入框 hover" class="input-text hover ">
+                      <input type="text" id="inputEmail" placeholder="普通一级输入框 focus" class="input-text focus">
+                        <textarea  rows="3" placeholder="文本域"></textarea>
+                       <label class="checkbox">
+                          <input type="checkbox"> 记住密码
+                        </label>
+                    </fieldset>
+                  </form>
+                   <p>水平表單樣式</p>
+
+                  <form class="form-horizontal">
+                     <fieldset>
+                      <div class="control-group ">
+                        <label class="control-label" for="inputEmail"><span>*</span>电子邮箱</label>
+                        <div class="controls">
+                          <input type="text" id="inputEmail" placeholder="Email" class="input-text"><span class="help-inline">友情提示</span>
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <label class="control-label" for="inputPassword"><span>*</span>密码</label>
+                        <div class="controls">
+                          <input class="input-text" type="password" id="inputPassword" placeholder="Password">
+                        </div>
+                      </div>
+                      <div class="control-group">
+                        <div class="controls">
+                          <label class="checkbox">
+                            <input type="checkbox"> 记住密码
+                          </label>
+                          <a class="btn" href="#button">提交</a>
+                        </div>
+                      </div>
+                  </fieldset>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="button">按钮</h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span10">
+                  <p>对于现在的按钮没有很好的定义，差不多只是从视觉上分类，并没有从语义上有良好的定义。这里展示的只不过是一种思路，一种实践方式。</p>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>按钮</th>
+                        <th>class</th>
+                        <th>描述</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#button" class="btn">默认</a></td>
+                        <td><code>.btn</code></td>
+                        <td>标准默认按钮</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-primary">主要</a></td>
+                        <td><code>.btn.btn-primary</code></td>
+                        <td>在一系列按钮中，指出这个是最主要的操作。</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-weak">弱化</a></td>
+                        <td><code>.btn.btn-weak</code></td>
+                        <td>在一系列按钮中，指出这个按钮相对来说没这么重要。</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-link">链接</a></td>
+                        <td><code>.btn.btn-link</code></td>
+                        <td>简化一个按钮, 使它看起来像一个链接，同时保持按钮的行为。</td>
+                      </tr>
+                      <tr>
+                        <td colspan='3'><h5>下面的按钮在同程的UI中并没有涉及，但是为了保持按钮语义级别的完整性，我还是把它们全部列举出来。</h5></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-info">信息</a></td>
+                        <td><code>.btn.btn-info</code></td>
+                        <td>默认样式的替代样式。</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-success">成功</a></td>
+                        <td><code>.btn.btn-success</code></td>
+                        <td>表示成功或积极的动作。</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-warning">警告</a></td>
+                        <td><code>.btn.btn-warning</code></td>
+                        <td>提醒应该谨慎采取这个动作。</td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-danger">危险</a></td>
+                        <td><code>.btn.btn-danger</code></td>
+                        <td>表示这个动作危险或存在危险。</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="row">
+                <div class="span10">
+                  <h5>尺寸和大小</h5>
+                  <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>按钮</th>
+                        <th>class</th>
+                        <th>按钮</th>
+                        <th>class</th>
+                        <th>按钮</th>
+                        <th>class</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><a href="#button" class="btn btn-xlarge">超大按钮</a></td>
+                        <td><code>.btn.btn-xlarge</code></td>
+                        <td><a href="#button" class="btn btn-primary btn-xlarge">超大按钮</a></td>
+                        <td><code>.btn.btn-primary.btn-xlarge</code></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-large">大按钮</a></td>
+                        <td><code>.btn.btn-large</code></td>
+                        <td><a href="#button" class="btn btn-primary btn-large">大按钮</a></td>
+                        <td><code>.btn.btn-primary.btn-large</code></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn">默认</a></td>
+                        <td><code>.btn</code></td>
+                        <td><a href="#button" class="btn btn-primary">默认</a></td>
+                        <td><code>.btn.btn-primary</code></td>
+                        <td><a href="#button" class="btn btn-weak">默认</a></td>
+                        <td><code>.btn.btn-weak</code></td>
+                      </tr>
+                      <tr>
+                        <td><a href="#button" class="btn btn-small">小按钮</a></td>
+                        <td><code>.btn.btn-small</code></td>
+                        <td><a href="#button" class="btn btn-primary btn-small">小按钮</a></td>
+                        <td><code>.btn.btn-primary.btn-small</code></td>
+                        <td><a href="#button" class="btn btn-weak btn-small">小按钮</a></td>
+                        <td><code>.btn.btn-weak.btn-small</code></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row example-block">
+            <div class="span2">
+              <h3 id="icon">图标和徽标</h3>
+            </div>
+            <div class="span10">
+              <div class="row">
+                <div class="span10">
+                  <p>图标和徽标，应该以怎样分类呢？怎样的html结构和样式呢？</p>
+                  <p>看了设计部门的图标整理，没辙了。</p>
+                  <p>以下是自己根据bootstrap的图标修改的(着色 205,10,25):</p>
+                  <ul class="the-icons clearfix">
+                    <li><i class="icon icon-glass"></i> icon-glass</li>
+                    <li><i class="icon icon-music"></i> icon-music</li>
+                    <li><i class="icon icon-search"></i> icon-search</li>
+                    <li><i class="icon icon-envelope"></i> icon-envelope</li>
+                    <li><i class="icon icon-heart"></i> icon-heart</li>
+                    <li><i class="icon icon-star"></i> icon-star</li>
+                    <li><i class="icon icon-star-empty"></i> icon-star-empty</li>
+                    <li><i class="icon icon-user"></i> icon-user</li>
+                    <li><i class="icon icon-film"></i> icon-film</li>
+                    <li><i class="icon icon-th-large"></i> icon-th-large</li>
+                    <li><i class="icon icon-th"></i> icon-th</li>
+                    <li><i class="icon icon-th-list"></i> icon-th-list</li>
+                    <li><i class="icon icon-ok"></i> icon-ok</li>
+                    <li><i class="icon icon-remove"></i> icon-remove</li>
+                    <li><i class="icon icon-zoom-in"></i> icon-zoom-in</li>
+                    <li><i class="icon icon-zoom-out"></i> icon-zoom-out</li>
+                    <li><i class="icon icon-off"></i> icon-off</li>
+                    <li><i class="icon icon-signal"></i> icon-signal</li>
+                    <li><i class="icon icon-cog"></i> icon-cog</li>
+                    <li><i class="icon icon-trash"></i> icon-trash</li>
+                    <li><i class="icon icon-home"></i> icon-home</li>
+                    <li><i class="icon icon-file"></i> icon-file</li>
+                    <li><i class="icon icon-time"></i> icon-time</li>
+                    <li><i class="icon icon-road"></i> icon-road</li>
+                    <li><i class="icon icon-download-alt"></i> icon-download-alt</li>
+                    <li><i class="icon icon-download"></i> icon-download</li>
+                    <li><i class="icon icon-upload"></i> icon-upload</li>
+                    <li><i class="icon icon-inbox"></i> icon-inbox</li>
+
+                    <li><i class="icon icon-play-circle"></i> icon-play-circle</li>
+                    <li><i class="icon icon-repeat"></i> icon-repeat</li>
+                    <li><i class="icon icon-refresh"></i> icon-refresh</li>
+                    <li><i class="icon icon-list-alt"></i> icon-list-alt</li>
+                    <li><i class="icon icon-lock"></i> icon-lock</li>
+                    <li><i class="icon icon-flag"></i> icon-flag</li>
+                    <li><i class="icon icon-headphones"></i> icon-headphones</li>
+                    <li><i class="icon icon-volume-off"></i> icon-volume-off</li>
+                    <li><i class="icon icon-volume-down"></i> icon-volume-down</li>
+                    <li><i class="icon icon-volume-up"></i> icon-volume-up</li>
+                    <li><i class="icon icon-qrcode"></i> icon-qrcode</li>
+                    <li><i class="icon icon-barcode"></i> icon-barcode</li>
+                    <li><i class="icon icon-tag"></i> icon-tag</li>
+                    <li><i class="icon icon-tags"></i> icon-tags</li>
+                    <li><i class="icon icon-book"></i> icon-book</li>
+                    <li><i class="icon icon-bookmark"></i> icon-bookmark</li>
+                    <li><i class="icon icon-print"></i> icon-print</li>
+                    <li><i class="icon icon-camera"></i> icon-camera</li>
+                    <li><i class="icon icon-font"></i> icon-font</li>
+                    <li><i class="icon icon-bold"></i> icon-bold</li>
+                    <li><i class="icon icon-italic"></i> icon-italic</li>
+                    <li><i class="icon icon-text-height"></i> icon-text-height</li>
+                    <li><i class="icon icon-text-width"></i> icon-text-width</li>
+                    <li><i class="icon icon-align-left"></i> icon-align-left</li>
+                    <li><i class="icon icon-align-center"></i> icon-align-center</li>
+                    <li><i class="icon icon-align-right"></i> icon-align-right</li>
+                    <li><i class="icon icon-align-justify"></i> icon-align-justify</li>
+                    <li><i class="icon icon-list"></i> icon-list</li>
+
+                    <li><i class="icon icon-indent-left"></i> icon-indent-left</li>
+                    <li><i class="icon icon-indent-right"></i> icon-indent-right</li>
+                    <li><i class="icon icon-facetime-video"></i> icon-facetime-video</li>
+                    <li><i class="icon icon-picture"></i> icon-picture</li>
+                    <li><i class="icon icon-pencil"></i> icon-pencil</li>
+                    <li><i class="icon icon-map-marker"></i> icon-map-marker</li>
+                    <li><i class="icon icon-adjust"></i> icon-adjust</li>
+                    <li><i class="icon icon-tint"></i> icon-tint</li>
+                    <li><i class="icon icon-edit"></i> icon-edit</li>
+                    <li><i class="icon icon-share"></i> icon-share</li>
+                    <li><i class="icon icon-check"></i> icon-check</li>
+                    <li><i class="icon icon-move"></i> icon-move</li>
+                    <li><i class="icon icon-step-backward"></i> icon-step-backward</li>
+                    <li><i class="icon icon-fast-backward"></i> icon-fast-backward</li>
+                    <li><i class="icon icon-backward"></i> icon-backward</li>
+                    <li><i class="icon icon-play"></i> icon-play</li>
+                    <li><i class="icon icon-pause"></i> icon-pause</li>
+                    <li><i class="icon icon-stop"></i> icon-stop</li>
+                    <li><i class="icon icon-forward"></i> icon-forward</li>
+                    <li><i class="icon icon-fast-forward"></i> icon-fast-forward</li>
+                    <li><i class="icon icon-step-forward"></i> icon-step-forward</li>
+                    <li><i class="icon icon-eject"></i> icon-eject</li>
+                    <li><i class="icon icon-chevron-left"></i> icon-chevron-left</li>
+                    <li><i class="icon icon-chevron-right"></i> icon-chevron-right</li>
+                    <li><i class="icon icon-plus-sign"></i> icon-plus-sign</li>
+                    <li><i class="icon icon-minus-sign"></i> icon-minus-sign</li>
+                    <li><i class="icon icon-remove-sign"></i> icon-remove-sign</li>
+                    <li><i class="icon icon-ok-sign"></i> icon-ok-sign</li>
+
+                    <li><i class="icon icon-question-sign"></i> icon-question-sign</li>
+                    <li><i class="icon icon-info-sign"></i> icon-info-sign</li>
+                    <li><i class="icon icon-screenshot"></i> icon-screenshot</li>
+                    <li><i class="icon icon-remove-circle"></i> icon-remove-circle</li>
+                    <li><i class="icon icon-ok-circle"></i> icon-ok-circle</li>
+                    <li><i class="icon icon-ban-circle"></i> icon-ban-circle</li>
+                    <li><i class="icon icon-arrow-left"></i> icon-arrow-left</li>
+                    <li><i class="icon icon-arrow-right"></i> icon-arrow-right</li>
+                    <li><i class="icon icon-arrow-up"></i> icon-arrow-up</li>
+                    <li><i class="icon icon-arrow-down"></i> icon-arrow-down</li>
+                    <li><i class="icon icon-share-alt"></i> icon-share-alt</li>
+                    <li><i class="icon icon-resize-full"></i> icon-resize-full</li>
+                    <li><i class="icon icon-resize-small"></i> icon-resize-small</li>
+                    <li><i class="icon icon-plus"></i> icon-plus</li>
+                    <li><i class="icon icon-minus"></i> icon-minus</li>
+                    <li><i class="icon icon-asterisk"></i> icon-asterisk</li>
+                    <li><i class="icon icon-exclamation-sign"></i> icon-exclamation-sign</li>
+                    <li><i class="icon icon-gift"></i> icon-gift</li>
+                    <li><i class="icon icon-leaf"></i> icon-leaf</li>
+                    <li><i class="icon icon-fire"></i> icon-fire</li>
+                    <li><i class="icon icon-eye-open"></i> icon-eye-open</li>
+                    <li><i class="icon icon-eye-close"></i> icon-eye-close</li>
+                    <li><i class="icon icon-warning-sign"></i> icon-warning-sign</li>
+                    <li><i class="icon icon-plane"></i> icon-plane</li>
+                    <li><i class="icon icon-calendar"></i> icon-calendar</li>
+                    <li><i class="icon icon-random"></i> icon-random</li>
+                    <li><i class="icon icon-comment"></i> icon-comment</li>
+                    <li><i class="icon icon-magnet"></i> icon-magnet</li>
+
+                    <li><i class="icon icon-chevron-up"></i> icon-chevron-up</li>
+                    <li><i class="icon icon-chevron-down"></i> icon-chevron-down</li>
+                    <li><i class="icon icon-retweet"></i> icon-retweet</li>
+                    <li><i class="icon icon-shopping-cart"></i> icon-shopping-cart</li>
+                    <li><i class="icon icon-folder-close"></i> icon-folder-close</li>
+                    <li><i class="icon icon-folder-open"></i> icon-folder-open</li>
+                    <li><i class="icon icon-resize-vertical"></i> icon-resize-vertical</li>
+                    <li><i class="icon icon-resize-horizontal"></i> icon-resize-horizontal</li>
+                    <li><i class="icon icon-hdd"></i> icon-hdd</li>
+                    <li><i class="icon icon-bullhorn"></i> icon-bullhorn</li>
+                    <li><i class="icon icon-bell"></i> icon-bell</li>
+                    <li><i class="icon icon-certificate"></i> icon-certificate</li>
+                    <li><i class="icon icon-thumbs-up"></i> icon-thumbs-up</li>
+                    <li><i class="icon icon-thumbs-down"></i> icon-thumbs-down</li>
+                    <li><i class="icon icon-hand-right"></i> icon-hand-right</li>
+                    <li><i class="icon icon-hand-left"></i> icon-hand-left</li>
+                    <li><i class="icon icon-hand-up"></i> icon-hand-up</li>
+                    <li><i class="icon icon-hand-down"></i> icon-hand-down</li>
+                    <li><i class="icon icon-circle-arrow-right"></i> icon-circle-arrow-right</li>
+                    <li><i class="icon icon-circle-arrow-left"></i> icon-circle-arrow-left</li>
+                    <li><i class="icon icon-circle-arrow-up"></i> icon-circle-arrow-up</li>
+                    <li><i class="icon icon-circle-arrow-down"></i> icon-circle-arrow-down</li>
+                    <li><i class="icon icon-globe"></i> icon-globe</li>
+                    <li><i class="icon icon-wrench"></i> icon-wrench</li>
+                    <li><i class="icon icon-tasks"></i> icon-tasks</li>
+                    <li><i class="icon icon-filter"></i> icon-filter</li>
+                    <li><i class="icon icon-briefcase"></i> icon-briefcase</li>
+                    <li><i class="icon icon-fullscreen"></i> icon-fullscreen</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="footer">
+        <div class="row">
+          <div class="span8">
+            &copy;2013 同程网
+          </div>
+          <div class="span4">
+            <ul class="inline">
+              <li><a href="./">首页</a></li>
+              <li><a href="./layout.html">脚手架</a></li>
+              <li><a href="./basic.html">基础css样式</a></li>
+              <li><a href="./components.html">组件</a></li>
+              <li><a href="./js.html">fish插件</a></li>
+              <li><a href="./comments.html">留言</a></li>
+              <li><a href="https://github.com/acthtml/fish" target="_blank">github</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

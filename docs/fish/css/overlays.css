@@ -1,0 +1,13 @@
+/**
+ * @file fish overlays.css
+ */
+
+/**
+ * overlay
+ ***************************/
+.overlay{border:2px solid #ccc;width: 400px;}
+.overlay .overlay-top{height: 33px;line-height: 33px;background: #F5F5F5;padding:0 10px;position: relative;}
+.overlay .overlay-top .overlay-top-title{font-size: 14px;font-weight: 700;}
+.overlay .overlay-top .close{display: block;width: 11px;height: 11px;overflow: hidden; background: url(../images/close.png) no-repeat 0 0; top: 10px;right: 10px;position: absolute;cursor: pointer;text-indent: -200000em;}
+.overlay .overlay-top .close:hover{background-position: 0 -11px;}
+.overlay .overlay-content{padding:10px;}

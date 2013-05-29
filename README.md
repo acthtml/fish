@@ -1,8 +1,8 @@
 fish
 ====
 
-The fish front-end framework.
+Fish前端框架.
 
+建立在12列栅格系统、基础css样式、组件之上。
 
-目前由于著作权的原因，这个框架是私有的。
----------------------------------------
+http://acthtml.github.io/fish/

@@ -1,0 +1,24 @@
+/**
+ * @file fish tabs.css
+ */
+
+/**
+ * tab
+ ***************************/
+.tab{}
+.tab .tab-nav{list-style: none;height: 31px;border-bottom:1px solid #cbe5fd;margin:0;padding:0;}
+.tab .tab-nav li{display: block;float: left;height: 30px;_overflow: hidden;}
+.tab .tab-nav li a{display: block;float: left;height: 30px;line-height: 30px; padding:0 23px;background:#eef8ff;border: 1px solid #cbe5fd;border-bottom:none;position: relative;margin-right: -1px;}
+.tab .tab-nav li.active a{background:#fff;border-top:2px solid #1679DD;line-height: 28px;cursor: default;}
+.tab .tab-nav li.active a:hover{text-decoration: none;}
+.tab .tab-items{border:1px solid #cbe5fd;border-top: none;padding:10px;}
+.tab .tab-items .tab-item{display: none;}
+.tab .tab-items .tab-item.active{display: block;}
+
+/*mini*/
+.tab.tab-mini{}
+.tab.tab-mini .tab-nav{border-bottom-color: #ddd;height: 26px;}
+.tab.tab-mini .tab-nav li{height: 26px;}
+.tab.tab-mini .tab-nav li a{height: 25px;line-height: 25px; padding:0 15px;background:none;border-color:#ddd;}
+.tab.tab-mini .tab-nav li.active a{background:#fff;border-top:1px solid #1679DD;line-height: 25px;height: 26px;}
+.tab.tab-mini .tab-items{border:1px solid #ddd;border-top: none;padding:10px;}

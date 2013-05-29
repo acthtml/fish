@@ -17,14 +17,26 @@
 @import url("tables.css");
 @import url("forms.css");
 
+/* Components: common
+ ******************/
+@import url("icons.css");
+@import url("dropdowns.css");
+@import url("wells.css");
+@import url("component-animations.css");
+@import url("close.css");
+
 /* Components: Buttons & Alerts
  ******************/
 @import url("buttons.css");
+@import url("button-groups.css");
 @import url("alerts.css");
 
 /* Components: Nav
  ******************/
 @import url("navs.css");
+@import url("navbar.css");
+@import url("breadcrumbs.css");
+@import url("pagination.css");
 @import url("pager.css");
 
 /* Components: Popovers
@@ -35,8 +47,16 @@
 
 /* Components: Misc
  ******************/
-@import url("icons.css");
 @import url("tabs.css");
+@import url("thumbnails.css");
+@import url("media.css");
+@import url("labels-badges.css");
+@import url("progress-bars.css");
+@import url("accordion.css");
 @import url("sliders.css");
+@import url("hero-unit.css");
 
+/* Utility classes
+ ******************/
+@import url("utilities.css");
 
