@@ -1,0 +1,292 @@
+﻿@charset "utf-8";
+.mCalendar {font-size:12px;line-height:20px;font-family:Arial; position:absolute;-moz-user-select:none;}
+.mCalendar .if{
+	position:absolute;
+	width:350px;
+	height:196px;
+	opacity:0;
+	border:none;
+	z-index:99;
+}
+.mCalendar .date{
+    border: 2px solid #bbdfff;
+    clear: both;
+    float: left;
+    width: 350px;
+    position: absolute;	
+	background:#ffffff;
+	display:inline;
+	z-index:10000;
+}
+.mCalendar.pink .date{
+    border: 2px solid #FF92C3;
+}
+
+.mCalendar .date .monthBg{
+	position:absolute;
+	width:165px;
+	height:165px;
+	font-size:110px;
+	font-family:Arial;
+	color:#f0f0f0;
+	z-index:-1;
+	line-height:165px;
+	margin-top:-165px;
+	text-align:center;
+}
+
+.mCalendar .date td{
+	padding:0px;
+}
+.mCalendar .date .top {
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    background: #005bb5;
+    width: 350px;
+}
+.mCalendar.pink .date .top {
+    background: #DA1D73;
+}
+
+#test5 {
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color:#FF9600 #3366ff transparent transparent;
+    border-style:solid solid dashed dashed;
+    border-width:40px 40px 0 0 ;
+}
+.mCalendar .date .lastMonthBg{
+	 float: left;
+	 width:15px;
+	 height:15px;
+	 border:1px #CAE2FA solid;
+	 background:#eef7ff;
+	margin-left:5px;
+	margin-top:5px;
+	cursor:pointer;
+}
+.mCalendar.pink .date .lastMonthBg{
+	 border:1px #FF91C3 solid;
+	 background:#FF91C3;
+}
+.mCalendar .date .lastMonth {
+    float: left;
+    cursor: pointer;
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-width:6px;
+    border-color:transparent #005bb5 transparent  transparent ;
+    border-style:dashed solid dashed dashed ;
+	position:absolute;
+	left:4px;
+	top:8px;
+}
+
+.mCalendar.pink .date .lastMonth {
+    border-color:transparent #fff transparent  transparent ;
+}
+
+.mCalendar .date .nextMonthBg{
+	 float: right;
+	 width:15px;
+	 height:15px;
+	 border:1px #CAE2FA solid;
+	 background:#eef7ff;
+	margin-right:5px;
+	margin-top:5px;
+	cursor:pointer;
+}
+.mCalendar.pink .date .nextMonthBg
+{
+	 border:1px #FF91C3 solid;
+	 background:#FF91C3;
+}
+.mCalendar .date .nextMonth {
+    float: right;
+    cursor: pointer;
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-width:6px;
+    border-color:transparent transparent transparent #005bb5;
+    border-style:dashed  dashed dashed solid;
+	position:absolute;
+	right:4px;
+	top:8px;
+}
+
+.mCalendar.pink .date .nextMonth {
+    border-color:transparent transparent transparent #fff;
+}
+
+.mCalendar .date .webkit_nextMonth {
+    float: right;
+    cursor: pointer;
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-width:5px;
+    border-color:transparent transparent transparent #005bb5;
+    border-style:dashed  dashed dashed solid;
+	position:absolute;
+	right:4px;
+	top:9px;
+}
+
+.mCalendar.pink .date .webkit_nextMonth {
+    border-color:transparent transparent transparent #fff;
+}
+.mCalendar .date .lastText {
+    float: left;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    margin-left: 35px;
+    display: inline;
+	font-weight:bolder;
+}
+
+.mCalendar .date .nextText {
+    float: right;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    margin-right: 35px;
+    display: inline;
+	font-weight:bolder;
+}
+.mCalendar h4
+{
+    background:none;
+    width:auto;    
+}
+.mCalendar .date .contentTime1 {
+    float: left;
+    width: 168px;
+}
+
+.mCalendar .date .contentTime2 {
+    float: right;
+    width: 168px;
+}
+
+.mCalendar .date table {
+    margin: 0px;
+    padding: 0px;
+    width: 168px;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    color: #005bb5;
+    border-left: 1px #f1f1f1 solid;
+}
+
+.mCalendar .date table th 
+{
+    text-align:center;
+    font-weight: normal;
+    color: #999999;
+    background: #f5f5f5;
+    width: 23px;
+    height: 25px;
+}
+
+.mCalendar .date table .td01 {
+    color: #005bb5;
+    border-right: 1px #f1f1f1 solid;
+    border-bottom: 1px #f1f1f1 solid;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+}
+
+.mCalendar .date table .td02 {
+    color: #cccccc;
+    border-right: 1px #f1f1f1 solid;
+    border-bottom: 1px #f1f1f1 solid;
+    cursor: pointer;
+    width: 23px;
+    height: 23px;
+}
+
+.mCalendar .date .spanHover {
+    color: #005bb5;
+    float: left;
+    border: 1px #bcdfff solid;
+    background: #eef7ff;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+}
+.mCalendar.pink .date .spanHover {
+    color: #FF91C3;
+    border: 1px #FFC9E1 solid;
+    background: #FFF7FB;
+}
+
+
+.mCalendar .date .spanOut {
+    color: #005bb5;
+    float: left;
+    border: 1px solid transparent;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+	cursor:default;
+	*border: 1px solid #fff;
+}
+
+.mCalendar.pink .date .spanOut {
+    color: #333;
+}
+.mCalendar .date  .spanDay {
+    color: #ff6600;
+    float: left;
+    border: 1px transparent solid;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+    background: #fff4ed;
+    font-weight: bolder;
+	*border: 1px solid #fff;
+}
+
+.mCalendar.pink .date  .spanDay {
+    color: #DA1D73;
+    background: #F5F5F5;
+}
+
+.mCalendar .date .spanOver {
+    color: #cccccc;
+    float: left;
+    border: 1px transparent solid;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+	cursor:default;
+	*border: 1px solid #fff;
+}
+.mCalendar .date .clickDate{
+	color: #005bb5;
+    float: left;
+    border: 1px #ffd5bb solid;
+    background: #fff4ed;
+    width: 21px;
+    height: 21px;
+    line-height: 21px;
+}

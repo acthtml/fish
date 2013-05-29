@@ -1,0 +1,18 @@
+﻿.autofill_wrap{position:absolute;z-index:999;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2)}
+.autofill_close{position:absolute;width:11px;height:11px;top:8px;right:10px;background:url(http://js.40017.cn/cn/public/module/autoComplete/0.3/pic.png?v=2) 0px -16px repeat scroll;right:10px;top:9px;cursor:pointer}
+.autofill_hd_inner{color:#999}
+.autofill_tray{border:1px solid #9b9b9b;background:#fff}
+.autofill_tray th{padding:4px 6px}
+.autofill_tray th{border-bottom:1px solid #ddd}
+.autofill_tray th,.autofill_tray td,.autofill_hd_inner{white-space:no-wrap}
+.autofill_tray td{color: #005bb5}
+.autofill_tray .ltd{text-align:left}
+.autofill_tray .rtd{text-align:right}
+.autofill_hover td{color: #fff;background: #28e}
+.autofill_tray .autofill_hili{color: #fd874c;cursor: pointer}
+.autofill_hover td{background:#28e;color:#fff}
+.autofill_hover .match_icon{background:url(http://js.40017.cn/cn/public/module/autoComplete/0.3/pic.png?v=2) no-repeat -250px 0px;}
+.match_icon {background:url(http://js.40017.cn/cn/public/module/autoComplete/0.3/pic.png?v=2) no-repeat -250px -16px; padding-left: 10px;}
+.autofill_amazingLine{border-top: 1px dashed #DDD;display: block;margin-top: 2px;height: 1px;font-size: 1px;line-height: 1px}
+.match_gray{color: #999}
+.match_black{color:#333}

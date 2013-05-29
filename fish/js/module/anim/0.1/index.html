@@ -1,0 +1,156 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>anim module</title>
+        <script src = ../../../fish.1.1.fwd.js ></script>
+        <script src=jquery-1.7.1.min.js></script>
+    </head>
+
+    <body>
+    <style>
+        *{margin:0;padding:0;}
+        body{background:#eee;}
+        h1, h2, h3, h4, h5, h6{}
+        h1{background:#142857;-webkit-transform:translate(100px);opacity:1; width:500px;}
+        h2{background:#1E3D85;-webkit-transform:translate(200px);opacity:1;width:500px;}
+        h3{background:#2A54B7;-webkit-transform:translate(0px);opacity:1;width:500px;}
+        h4{background:#597FD9;-webkit-transform:translate(0px);opacity:1;width:500px;}
+        h5{background:#ACBFEC;-webkit-transform:translate(0px);opacity:1;width:500px;}
+        h6{background:#EEF2FB;-webkit-transform:translate(0px);opacity:1;width:500px;}
+        .code{display:block;clear:both;}
+        .btn
+        {
+            display:block;
+            float:left;
+            margin:5px 0px;
+  	        -webkit-transition-property:all;
+	        -webkit-transition-duration:0.1s;
+	        -webkit-transition-timing-function:ease-out;
+  	        -moz-transition-property:all;
+	        -moz-transition-duration:0.2s;
+	        -moz-transition-timing-function:ease-out;
+  	        -o-transition-property:all;
+	        -o-transition-duration:0.2s;
+	        -o-transition-timing-function:ease-out;
+  	        -ms-transition-property:all;
+	        -ms-transition-duration:0.2s;
+	        -ms-transition-timing-function:ease-out;
+  	        transition-property:all;
+	        transition-duration:0.2s;
+	        transition-timing-function:ease-out;
+	        border-left:5px solid #142857;
+            background:#fff;
+            color: #142857;
+            padding: 3px 10px;
+            box-shadow: 0 1px #666;
+        }
+        .btn:hover{
+            text-shadow:0px 1px 0px #264CA6;
+            cursor:pointer;
+            color: #fff;
+            background:#698CDD;
+        }
+    </style>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <!--<script src="anim.js"></script>-->
+        <br />
+        <div class="code"><span class="btn" id="reset">fish.all("h1, h2, h3, h4, h5, h6").anim("width: 500px; opacity:1; -webkit-transform:translate(0px)")</span></div>
+        <div class="code"><span class="btn" id="a">fish.all("h1, h2").anim("width: 50px")</span></div>
+        <div class="code"><span class="btn" id="aJ">$("h1, h2").animate({width: "50px"}, 200)</span></div>
+        <div class="code"><span class="btn" id="b">fish.all("h1, h2").anim("width: 50px", 1000)</span></div>
+        <div class="code"><span class="btn" id="c">fish.all("h1, h2").anim("width: 50px", 1000, function () { alert("animation finish")})</span></div>
+        <div class="code"><span class="btn" id="d">fish.all("h1, h2").anim("opacity:0.2", 1000)</span></div>
+        <div class="code"><span class="btn" id="e">fish.all("h1, h2").anim("opacity:1", 1000)</span></div>
+        <div class="code"><span class="btn" id="f">fish.all("h1, h2").anim("-webkit-transform:translate(0px)", 1000)</span></div>
+        <div class="code"><span class="btn" id="g">fish.all("h1, h2").anim("-webkit-transform:translate(500px)", 1000)</span></div>
+        <div class="code"><span class="btn" id="gJ">$("h1, h2").animate({"webkitTransform":"translate(500px)"}, 1000)</span></div>
+        <div class="code"><span class="btn" id="h">fish.all("h1, h2").anim("width: 50px", 1000, { easing: bounce })</span></div>
+        <div class="code"><span class="btn" id="i">fish.all("h1, h2").anim("width: 50px", 1000, { easing: bounce , fn:function(){alert("animation finish")} })</span></div>
+        <div class="code">
+        <textarea cols="100" rows="12">
+function bounce(pos) {
+    if (pos < (1 / 2.75)) {
+        return (7.5625 * pos * pos);
+    } else if (pos < (2 / 2.75)) {
+        return (7.5625 * (pos -= (1.5 / 2.75)) * pos + .75);
+    } else if (pos < (2.5 / 2.75)) {
+        return (7.5625 * (pos -= (2.25 / 2.75)) * pos + .9375);
+    } else {
+        return (7.5625 * (pos -= (2.625 / 2.75)) * pos + .984375);
+    }
+}
+        </textarea>
+        </div>        
+        <script>
+
+
+            function bounce(pos) {
+                if (pos < (1 / 2.75)) {
+                    return (7.5625 * pos * pos);
+                } else if (pos < (2 / 2.75)) {
+                    return (7.5625 * (pos -= (1.5 / 2.75)) * pos + .75);
+                } else if (pos < (2.5 / 2.75)) {
+                    return (7.5625 * (pos -= (2.25 / 2.75)) * pos + .9375);
+                } else {
+                    return (7.5625 * (pos -= (2.625 / 2.75)) * pos + .984375);
+                }
+            }
+
+            fish.all("#reset").on("click", function () {
+                fish.all("h1, h2, h3, h4, h5, h6").anim("width: 500px; opacity:1; -webkit-transform:translate(0px)");
+            })
+            fish.all("#a").on("click", function () {
+                fish.all("h1, h2").anim("width: 50px");
+            })
+            fish.all("#aJ").on("click", function () {
+                $("h1, h2").animate({ width: "50px" }, 200);
+            })
+            fish.all("#b").on("click", function () {
+                fish.all("h1, h2").anim("width: 50px", 1000);
+            })
+            fish.all("#c").on("click", function () {
+                fish.all("h1, h2").anim("width: 50px", 1000, function () { alert("animation finish") });
+            })
+            fish.all("#d").on("click", function () {
+                fish.all("h1, h2").anim("opacity:0.2", 1000);
+            })
+            fish.all("#e").on("click", function () {
+                fish.all("h1, h2").anim("opacity:1", 1000);
+            })
+            fish.all("#f").on("click", function () {
+                fish.all("h1, h2").anim("-webkit-transform:translate(0px)", 1000);
+            })
+            fish.all("#g").on("click", function () {
+                fish.all("h1, h2").anim("-webkit-transform:translate(500px)", 1000);
+            })
+            fish.all("#gJ").on("click", function () {
+                $("h1, h2").animate({ "webkitTransform": "translate(500px)" }, 1000)
+            })
+            fish.all("#h").on("click", function () {
+                fish.all("h1, h2").anim("width: 50px", 1000, { easing: bounce });
+            })
+            fish.all("#i").on("click", function () {
+                fish.all("h1, h2").anim("width: 50px", 1000, { easing: bounce , fn:function(){alert("animation finish")} });
+            })
+        </script>
+
+    
+    </body>
+</html>

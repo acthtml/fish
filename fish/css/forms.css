@@ -1,0 +1,60 @@
+/**
+ * @file fish form.css
+ *
+ * @TODO 暂时没有很好的表单解决方案，要等图标，按钮确定后，并且解决表单的验证和
+ *       提交后方能进行这里的开发。
+ * @author lzz4436@17u.cn
+ */
+
+ /**
+ * 指定文本框的样式
+ *************************/
+.input-text{border: 1px solid #dddddd;background:url(../images/input.png);font-size: 12px;height: 22px;line-height: 22px;padding-left: 5px}
+.focus{border: 1px solid #76bbff ;}
+.hover:hover{border: 1px solid #ffa63c ;background:#fff8ee }
+.checkbox{cursor: pointer;}
+
+
+ /**
+ * 指定表单的样式
+ *************************/
+.control-label span{color: red;padding-right:5px}
+.form-inline label{display: inline-table;}
+.form-horizontal .control-group{width: 500px;height:40px;}
+.form-horizontal .control-label{width: 100px;text-align: center;float: left; }
+.form-horizontal .control-label{float:left;width: 100px;text-align: right; }
+.form-horizontal .controls{padding-left: 120px}
+.form-horizontal .help-inline{color:#666666;padding-left: 10px}
+
+
+ /**
+ * 個別样式
+ *************************/
+form fieldset {border: 0 none;margin: 0;padding: 20px;}
+label{display: block; margin-bottom: 5px;}
+textarea {border: 1px solid #dddddd;background:none;font-size: 12px;line-height: 22px;padding-left: 5px}
+legend {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color -moz-use-text-color #E5E5E5;
+    border-image: none;
+    border-style: none none solid;
+    border-width: 0 0 1px;
+    color: #333333;
+    display: block;
+    font-size: 21px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    padding: 0;
+    width: 100%;
+}
+form{ background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 3px 7px;
+    position: relative;}
+
+

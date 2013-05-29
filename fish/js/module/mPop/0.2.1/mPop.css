@@ -1,0 +1,61 @@
+﻿.mtop{
+    margin-top: 10px;
+}
+.mbottom{
+    margin-bottom: 10px;
+}
+.bgIframe{
+	position:absolute;
+	filter:alpha(opacity=30);
+	z-index:998;
+	left:0;
+	top:0;
+}
+
+/***弹出窗**/
+.bgBag{
+	background-color:#000;
+	opacity:0.3;
+	filter: alpha(opacity=30); 
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:100;
+}
+.outBag{
+	position:absolute;
+	background-color:#fff;
+	top:0;
+	left:0;
+	zoom:1;
+}
+.topBag{
+	overflow:hidden;
+	zoom:1;
+	border-bottom:1px solid #C3E1FF;
+	background-color:#EEF7FF;
+	cursor:move;
+	padding:3px 0;
+}
+.filiternone{
+			background-color:#ffffff;
+			filter:alpha(opacity=0);
+			opacity: 0;
+}
+.boxTitle{
+	float:left;
+	user-select:none; 
+	font-size:14px;
+	text-overflow: ellipsis;
+	display:inline-block;
+	overflow:hidden;
+	white-space:nowrap;
+	margin-left:10px;
+	*margin-left:5px;
+}
+.closeImg{
+	float:right;
+	cursor:pointer;
+	margin-right:10px;
+	*margin-right:5px;
+}

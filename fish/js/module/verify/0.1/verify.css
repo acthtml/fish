@@ -1,0 +1,23 @@
+﻿/* File Created: 九月 17, 2012 */
+.error,.right{
+        height:20px;
+        line-height:20px;
+        font-size: 12px;
+        background:  url(http://img1.40017.cn/cn/new_ui/public/images/verify_bg.png?v=2012091703) no-repeat 2px -37px #FFF4ED;
+        *zoom:1;
+        display:inline-block;
+        position: relative;
+        vertical-align  : top;
+}
+.error{
+    padding: 0 5px 0 25px;
+    border: 1px solid #FFAC75;
+    color: #F60;
+    margin-left: 5px;
+}
+
+.right{
+    padding: 0 10px;
+    background-position:5px 6px;
+    background-color: transparent;
+}

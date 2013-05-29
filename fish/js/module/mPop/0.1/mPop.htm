@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src = ../../../fish.1.1.fwd.js ></script>
+</head>
+<body>
+<style>
+        *{margin:0;padding:0;}
+        body{background:#eee;}
+        h1, h2, h3, h4, h5, h6{}
+        h1{background:#142857;-webkit-transform:translate(100px);opacity:1;width:500px;}
+        h2{background:#1E3D85;-webkit-transform:translate(200px);opacity:1;width:400px;}
+        h3{background:#2A54B7;-webkit-transform:translate(0px);opacity:1;width:350px;}
+        h4{background:#597FD9;-webkit-transform:translate(0px);opacity:1;width:200px;}
+        h5{background:#ACBFEC;-webkit-transform:translate(0px);opacity:1;width:600px;}
+        h6{background:#EEF2FB;-webkit-transform:translate(0px);opacity:1;width:200px;}
+        
+    </style>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <div class="hg">
+        <h1 id="p1">1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4 id="p4">4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <button id="pop">mPop element</button>
+    <button id="pop2">mPop innerHTML</button>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <div class="hg">
+        <h1>1</h1>
+        <h2 id="p2">2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3 id="p3">3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6 id="p6">6</h6>
+    </div>
+    <div class="hg">
+        <h1>1</h1>
+        <h2>2</h2>
+        <h3>3</h3>
+        <h4>4</h4>
+        <h5>5</h5>
+        <h6>6</h6>
+    </div>
+    <script>
+    fish.all("#pop").on("click", function(){
+                fish.mPop({
+                    //content:fish.all("#p1, #p2, #p3, #p4, #p5, #p6")
+                    content:"<p>sdfasdfasdfasdf</p>"
+                })
+    })
+
+    fish.all("#pop2").on("click", function(){
+                fish.mPop({
+                    content:fish.all("#p1, #p2, #p3, #p4, #p5, #p6")
+                    //content:"<p>sdfasdfasdfasdf</p>"
+                })
+    })
+
+
+    </script>
+</body>
+</html>

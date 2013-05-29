@@ -1,0 +1,469 @@
+﻿.mCalendar {font-size:12px;line-height:20px;font-family:Arial; position:absolute;-moz-user-select:none;z-index:10000;}
+.mCalendar .if{
+	position:absolute;
+    left: 0px;
+    top: 0px;
+	width:446px;
+	height: 223px;
+	opacity:0;
+	border:none;
+	z-index:9999;
+}
+.mCalendar .date{
+    top:0px;
+    left: 0px;
+    overflow: hidden;
+    border: 2px solid #bbdfff;
+    clear: both;
+    float: left;
+    width: 446px;
+    position: absolute;	
+	background:#ffffff;
+	display:inline;
+	z-index:10000;
+}
+.mCalendar.pink .date{
+    border: 2px solid #FF92C3;
+}
+.mCalendar.orange .date{
+    border: 2px solid #f5d6b8;
+}
+.mCalendar.earth-yellow .date{
+	border: 2px solid #eae0ca;
+}
+.mCalendar .date .monthBg{
+	position:absolute;
+    top:0px;
+    left:0px;
+	width:222px;
+	height:165px;
+	font-size:110px;
+	font-family:Arial;
+	color:#f0f0f0;
+	z-index:-1;
+	line-height:165px;
+	text-align:center;
+}
+.mCalendar .date .loadingbg{
+    background: url(http://img1.40017.cn/cn/comm/images/cn/public/transparent_loading.gif) center center no-repeat;
+}
+
+.mCalendar .date td{
+	padding:0px;
+}
+.mCalendar .date .top {
+    float: left;
+    height: 27px;
+    line-height: 27px;
+    background: #005bb5;
+}
+.mCalendar.pink .date .top {
+    background: #DA1D73;
+}
+.mCalendar.orange .date .top {
+    background: #f87d2c;
+}
+.mCalendar.earth-yellow .date .top {
+    background: #aa8b4c;
+}
+#test5 {
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-color:#FF9600 #3366ff transparent transparent;
+    border-style:solid solid dashed dashed;
+    border-width:40px 40px 0 0 ;
+}
+.mCalendar .date .lastMonthBg{
+	 position: absolute;
+    left: 0px;
+	 width:15px;
+	 height:15px;
+	 border:1px #CAE2FA solid;
+	 background:#eef7ff;
+	margin-left:5px;
+	margin-top:5px;
+    *margin-top:1px;
+	cursor:pointer;
+}
+.mCalendar.pink .date .lastMonthBg{
+	 border:1px #FF91C3 solid;
+	 background:#FF91C3;
+}
+.mCalendar.orange .date .lastMonthBg{
+    border:1px #f5d6b8 solid;
+    background:#f8f5ed;
+}
+.mCalendar.earth-yellow .date .lastMonthBg{
+	background: #f8f5ed;
+	border:1px #f5d6b8 solid;
+}
+.mCalendar .date .lastMonth {
+    cursor: pointer;
+    height:0;
+    width:0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    border-width:6px;
+    border-color:transparent #005bb5 transparent  transparent ;
+    border-style:dashed solid dashed dashed ;
+	position:absolute;
+	left:-2px;
+	top:2px;
+}
+
+
+.mCalendar.pink .date .lastMonth {
+    border-color:transparent #fff transparent  transparent ;
+}
+.mCalendar.orange .date .lastMonth {
+    border-color:transparent #f87d2c transparent  transparent ;
+}
+.mCalendar.earth-yellow .date .lastMonth {
+	border-color:transparent #aa8b4c transparent  transparent ;
+}
+
+.mCalendar .date .nextMonthBg{
+    position: absolute;
+    right: 0px;
+	 width:15px;
+	 height:15px;
+	 border:1px #CAE2FA solid;
+	 background:#eef7ff;
+	margin-right:5px;
+	margin-top:5px;
+    *margin-top:1px;
+	cursor:pointer;
+}
+.mCalendar.pink .date .nextMonthBg
+{
+	 border:1px #FF91C3 solid;
+	 background:#FF91C3;
+}
+.mCalendar.orange .date .nextMonthBg
+{
+    border:1px #f5d6b8 solid;
+    background:#f8f5ed;
+}
+.mCalendar.earth-yellow .date .nextMonthBg
+{
+	background: #f8f5ed;
+	border:1px #f5d6b8 solid;
+}
+.mCalendar .date .nextMonth {
+    cursor: pointer;
+    height:0;
+    width:0;
+    font-size: 0;
+    line-height: 0;
+    border-width:6px;
+    border-color:transparent transparent transparent #005bb5;
+    border-style:dashed dashed dashed solid;
+	position:absolute;
+    right:-2px;
+    _right:-3px;
+	top:2px;
+}
+.mCalendar.earth-yellow .date .nextMonth {
+	border-color:transparent transparent transparent #aa8b4c;
+}
+.mCalendar.pink .date .nextMonth {
+    border-color:transparent transparent transparent #fff;
+}
+.mCalendar.orange .date .nextMonth {
+    border-color:transparent transparent transparent #f87d2c;
+}
+.mCalendar .date .lastText ,.mCalendar .date .nextText,.mCalendar .date .normalText{
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+    display: block;
+	font-weight:bolder;
+}
+
+.mCalendar h4
+{
+    background:none;
+    width:auto;    
+}
+.mCalendar .date .contentTime{
+    position: relative;
+    float: left;
+    margin-left:10px;
+    *margin-left:9px;
+}
+.mCalendar .date .contentTime1
+{
+    margin-left:0px;
+}
+
+
+
+.mCalendar .date table {
+    margin: 0px;
+    padding: 0px;
+    font-size: 12px;
+    font-family: Arial;
+    text-align: center;
+    color: #005bb5;
+    border-left: 1px #f1f1f1 solid;
+}
+.mCalendar .date .tbl_lastMonth{
+    border: none;
+}
+
+.mCalendar .date table th 
+{
+    text-align:center;
+    font-weight: normal;
+    color: #999999;
+    background: #f5f5f5;
+    width: 30px;
+    height: 25px;
+}
+
+
+.mCalendar .date table .td01,.mCalendar .date table .td02 {
+    color: #cccccc;
+    border-right: 1px #f1f1f1 solid;
+    border-bottom: 1px #f1f1f1 solid;
+    width: 30px;
+    height: 30px;
+   
+}
+
+.mCalendar .date .td01 .spanOver,.mCalendar .date .td02 .spanOver,.mCalendar .date .td01 .spanOut,.mCalendar .date .td02 .spanOut
+{
+    
+}
+
+
+.mCalendar .date td .spanHover {
+    color: #005bb5;
+    float: left;
+    border: 1px #bcdfff solid;
+    cursor: pointer;
+    background: #eef7ff;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+}
+.mCalendar .date .spanHover .dateWrap, .mCalendar .date .spanHover .useWrap{
+    cursor: pointer;
+}
+.mCalendar.pink .date .spanHover {
+    color: #FF91C3;
+    border: 1px #FFC9E1 solid;
+    background: #FFF7FB;
+}
+.mCalendar.orange .date .spanHover {
+    color: #333;
+    background: #fff9f0;
+    border:1px solid #fff9f0;
+}
+.mCalendar.earth-yellow .date .spanHover {
+	color: #8c7122;
+	background: #f7f2e4;
+	border: 1px solid #f7f2e4;
+}
+
+.mCalendar .date .spanOut {
+    color: #005bb5;
+    float: left;
+    border:1px solid transparent;
+    *border:1px solid #fff;
+    /* padding: 1px;*/
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+	cursor:default;
+}
+
+.mCalendar.pink .date .spanOut {
+    color: #333;
+}
+.mCalendar.orange .date .spanOut {
+    color: #333;
+}
+.mCalendar .date  .spanDay {
+    color: #ff6600;
+    float: left;
+    /* border: 1px transparent solid; */
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: bolder;
+}
+
+.mCalendar.pink .date  .spanDay {
+    color: #DA1D73;
+    background: #F5F5F5;
+}
+
+.mCalendar .date .spanOver {
+    color: #cccccc;
+    float: left;
+    border:1px solid transparent;
+    *border:1px solid #fff;
+    /* padding: 1px; */
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+	cursor:default;
+}
+.mCalendar .date .contentTime .clickDate{
+	color: #005bb5;
+    float: left;
+    border: 1px #ffd5bb solid;
+    background-color: #fff4ed;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    
+}
+
+.earth-yellow .date .contentTime .clickDate{
+	background-color: #f7f2e4;
+	border: 1px solid #8C7122;
+	color: #8C7122;
+}
+
+.mCalendar .date .spanOut {
+    color: #005BB5;
+}
+.mCalendar.earth-yellow .date .spanOut {
+	color: #8c7122;
+}
+.mCalendar .date .spanDay {
+    /* border: 1px solid transparent; */
+    padding: 0;
+    font-weight: bolder;
+}
+.mCalendar .date .spanOver {
+    color: #CCCCCC;
+    cursor: default;
+}
+.mCalendar .date .clickDate {
+    background: none repeat scroll 0 0 #FFF4ED;
+    border: 1px solid #FFD5BB;
+    color: #005BB5;
+}
+.mCalendar .date .sat,.mCalendar .date .sun
+{
+    background: url("http://img1.40017.cn/cn/new_ui/public/images/mCal_3.png") no-repeat #F5F5F5;
+}
+.mCalendar .date .spanDay, .mCalendar .date .spanTomo, .mCalendar .date .yuandan, .mCalendar .date .chuxi, .mCalendar .date .chunjie, .mCalendar .date .yuanxiao, .mCalendar .date .qingming, .mCalendar .date .duanwu, .mCalendar .date .qixi, .mCalendar .date .zhongqiu, .mCalendar .date .guoqing, .mCalendar .date .shendan, .mCalendar .date .wuyi, .mCalendar .date .liuyi {
+    background-image: url("http://img1.40017.cn/cn/new_ui/public/images/mCal_3.png");
+    /* border:1px solid transparent;
+    *border:1px solid #fff; */
+    padding: 1px;
+    display: inline-block;
+    float: left;
+    height: 28px;
+    width: 28px;
+}
+.mCalendar .date .contentTime .hover {
+    background-color: #EEF7FF;
+    border: 1px solid #BCDFFF;
+    cursor: pointer;
+}
+.mCalendar .date .contentTime .hover .dateWrap, .mCalendar .date .contentTime .hover .useWrap{
+    cursor: pointer;
+}
+.earth-yellow .date .contentTime .hover {
+	background-color: #f7f2e4;
+    border: 1px solid #f7f2e4;
+}
+
+.mCalendar .date .sel {
+    background-color: #FFF4ED;
+    border: 1px solid #FFD5BB;
+}
+.mCalendar .date .spanDay {
+    background-position: -140px -9px;
+}
+.mCalendar .date .spanTomo {
+    background-position: -139px -45px;
+    /* border:1px solid transparent;
+    *border:1px solid #fff; */
+    padding: 1px;
+}
+.mCalendar .date .sat 
+{
+    background-position: -133px -79px;
+}
+.mCalendar .date .sun 
+{
+    background-position: -132px -115px;
+}    
+.mCalendar .date .yuandan {
+    background-position: 2px -8px;
+}
+.mCalendar .date .chuxi {
+    background-position: 2px -44px;
+}
+.mCalendar .date .chunjie {
+    background-position: 2px -80px;
+}
+.mCalendar .date .yuanxiao {
+    background-position: 2px -117px;
+}
+.mCalendar .date .qingming {
+    background-position: 2px -152px;
+}
+.mCalendar .date .duanwu {
+    background-position: 2px -188px;
+}
+.mCalendar .date .qixi {
+    background-position: 2px -224px;
+}
+.mCalendar .date .zhongqiu {
+    background-position: 2px -260px;
+}
+.mCalendar .date .guoqing {
+    background-position: 2px -297px;
+}
+.mCalendar .date .shendan {
+    background-position: 2px -332px;
+}
+.mCalendar .date .liuyi {
+    background-position: -62px -8px;
+}
+.mCalendar .date .wuyi {
+    background-position: -62px -45px;
+}
+.mCalendar .useWrap
+{
+    clear:left;
+}
+.mCalendar .date .dateWrap
+{
+    cursor: default;
+    float: left;
+    height: 28px;
+    line-height: 28px;
+    width: 28px;
+}
+ .floatL
+ {
+     float:left;
+     display:inline;
+ }
+.dayWrap
+{
+    position: absolute;
+    z-index:10;
+    width:63px;
+    color:#ccc;
+}
+.none
+{
+    display:none;
+}

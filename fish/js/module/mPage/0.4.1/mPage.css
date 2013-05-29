@@ -1,0 +1,20 @@
+﻿.bag_page{clear:both;text-align:right;}
+.mr10{margin-right:10px;display:inline-block;}
+.bag_page input{margin-right:10px;}
+.bag_page a.pagenum{padding:0 8px;}
+.bag_page a.pagenum,.bag_page a.guidnum{float:left;height:20px;border:1px solid #ddd;color:blue;text-align:center;line-height:20px;margin-right:10px;text-decoration:none;cursor:pointer;color:#005BB5;}
+.bag_page a.currentpage{background-color:#2288EE;color:#fff;font-weight:bold;}
+.bag_page a.pagenum:hover,.bag_page a.guidnum:hover{background-color:#FFF4ED;border:1px solid #FFB17E;color:#f60;}
+.bag_page a.indexGrey{color:#ccc;cursor:default;background:url("http://img1.40017.cn/cn/comm/images/cn/public/page_link.png") no-repeat scroll 9px 5px transparent;padding:0 15px 0 23px;}
+.bag_page a.indexGrey:hover{background-color:#fff;color:#ccc;border:1px solid #ddd;}
+.bag_page a.indexNormal{background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 9px -74px no-repeat;padding:0 15px 0 23px;}
+.bag_page a.prevGrey{color:#ccc;cursor:default;background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 10px -14px no-repeat;padding:0 15px 0 23px;}
+.bag_page a.prevGrey:hover{background-color:#fff;color:#ccc;border:1px solid #ddd;}
+.bag_page a.prevNormal{background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 10px -95px no-repeat;padding:0 15px 0 23px;}
+.bag_page a.nextGrey{color:#ccc;cursor:default;background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 56px -117px no-repeat;border:1px solid #ddd;padding:0 23px 0 15px;}
+.bag_page a.nextGrey:hover{background-color:#fff;color:#ccc;border:1px solid #ddd;}
+.bag_page a.nextNormal{background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 56px -35px no-repeat;padding:0 23px 0 15px;}
+.bag_page a.lastGrey{color:#ccc;cursor:default;background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 48px -138px no-repeat;padding:0 23px 0 15px;}
+.bag_page a.lastGrey:hover{background-color:#fff;color:#ccc;border:1px solid #ddd;}
+.bag_page a.lastNormal{background:url(http://img1.40017.cn/cn/comm/images/cn/public/page_link.png) 48px -55px no-repeat;padding:0 23px 0 15px;}
+.bag_page span{float: left;}

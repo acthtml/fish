@@ -1,0 +1,24 @@
+﻿.mNotice-wrap{width:360px;background:#ffffff;box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);}
+* html #mNotice-backdrop{position:absolute;z-index:-1;top:0;left:0}
+.mNotice-tray{border:1px solid #bce0ff;padding:10px;background:#eef7ff}
+.mNotice-head{font-size:12px;font-weight:bold;height:19px;line-height:19px;padding-bottom:8px;border-bottom:1px dashed #cccccc}
+.mNotice-separate{margin-top:10px}
+.mNotice-wrap .white{background-position: 0px 0px;}
+.mNotice-close{position:absolute;height:11px;width:11px;background:url(http://js.40017.cn/cn/public/module/mNotice/0.2/pic.png) 0px -16px repeat scroll;right:10px;top:9px;cursor:pointer}
+.mNotice-normal{word-break:keep-all;color:#005bb5;float:left;cursor:pointer;display:block;height:19px;line-height:19px;margin-top:3px;margin-left:20px}
+.mNotice-hover{color:#ff6600;text-decoration:underline;cursor:pointer}
+.mNotice-content{margin-top:5px;width:346px;margin-left:-20px}
+.mNotice-mTab-head{background:#28e;color:#fff;height:28px;line-height:28px;overflow:hidden;text-indent:10px;font-size:12px;font-weight:bold}
+.mNotice-mTab-head-remark{font-weight:normal}
+.mNotice-mTab-wrap{padding:5px 7px;border:1px solid #9b9b9b;border-top:none;}
+.mNotice-mTab-tab-tray{margin-top:5px;position:relative;z-index:1}
+.mNotice-mTab-item{float:left;border:1px solid #ffffff;border-bottom:0;padding-bottom:1px;height:22px;line-height:22px;font-weight:bold;padding:0 11px;cursor:pointer}
+.mNotice-mTab-tab-tray .current{border:1px solid #76bbff;border-bottom:1px solid #ffffff;cursor:default}
+.mNotice-mTab-content{margin-top:-1px;border-top:1px solid #76bbff;position:relative;z-index:0;width:330px;padding:5px}
+.mNotice-mTab-content .mNotice-normal{float:left;cursor:pointer;display:block;border:1px solid #FFFFFF;height:22px;line-height:22px;margin-right:2px;margin-left:0px;padding-right:4px;padding-left:4px;margin-top:0px;color:#005bb5}
+.mNotice-title,.mNotice-def{float:left}
+.mNotice-title{width:25px;text-align:center;color:#f60;padding:1px 0;line-height:22px}
+.mNotice-def{width:304px}
+.mNotice-mTab-content .mNotice-hover{color:#ff6600;background:#fff8ee;border:1px solid #ffd5a1;text-decoration:none}
+* html .mNotice-mTab-item,* html .mNotice-mTab-content .mNotice-normal,* html .mNotice-title,* html .mNotice-def{float:left}
+* html .mNotice-normal{display:inline}

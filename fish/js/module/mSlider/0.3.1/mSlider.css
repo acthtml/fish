@@ -1,0 +1,175 @@
+﻿/******** 小方块按钮样式 **********/
+.mSlider_nav_orange{list-style-type:none;margin:0;padding:0;overflow:hidden;position:absolute;bottom:10px;right:10px;z-index:99;float:right;}
+* html .mSlider_nav_orange{position:relative;margin-top:-20px;}
+.mSlider_nav_orange li{width: 18px;height: 18px;display: inline-block;margin-right: 4px;float: left;}
+.mSlider_nav_orange li a{float:left;width:18px;height:18px;font-size:12px;display:inline;text-align:center;cursor:pointer;line-height:18px;background:#fff;color:#666;text-decoration:none;}
+.mSlider_nav_orange li.current a{background:#ff6600;font-weight:bold;color:#fff}
+.mSlider_nav_orange li a:hover, .mSlider_nav_orange li.current a:hover {text-decoration: none;}
+
+.mSlider_nav_bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background-color: black;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+
+/***** 底部绿色按钮样式 ******/
+.mSlider_nav_bottom_green {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:30px;    
+    width: 102%; 
+}
+* html .mSlider_nav_bottom_green {
+	position: relative;
+	z-index: 1;
+}
+.mSlider_nav_bottom_green .holder{
+	position: absolute;
+    left:0px;
+}
+* html .mSlider_nav_bottom_green .holder {
+	position: relative;
+    left:0px;
+    margin-top: -30px;
+}
+
+.mSlider_nav_bottom_green a {
+    float: left;
+    height: 30px;
+    line-height: 29px;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+	font-size:12px;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.mSlider_nav_bottom_green a:hover, .mSlider_nav_bottom_green a:active {
+    text-decoration: none;
+	color:#fff;
+}
+
+.mSlider_nav_bottom_green a .outter {
+    display: none
+}
+
+.mSlider_nav_bottom_green a:hover, .mSlider_nav_bottom_green a.current {
+    position: relative;
+    background-color: #79b31c;
+	font-weight:bold;
+}
+
+.mSlider_nav_earth_yellow a:hover, .mSlider_nav_earth_yellow a.current {
+    position: relative;
+    background-color: #a98a4a;
+	font-weight:bold;
+}
+
+.mSlider_nav_bottom_green a:hover .outter, .mSlider_nav_bottom_green a.current .outter {
+    display: block;
+    font: 300 12px / 18px "\5B8B\4F53";
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -6px;
+    top: -8px;
+    *top:-13px;
+    color: #79b31c
+}
+
+.mSlider_nav_earth_yellow a:hover .outter, .mSlider_nav_earth_yellow a.current .outter {
+    display: block;
+    font: 300 12px / 18px "\5B8B\4F53";
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -6px;
+    top: -8px;
+    *top:-13px;
+    color: #a98a4a;
+}
+
+.mSlider_nav_bottom_green a span{
+	width:120px;
+	height:100%;
+	display:block;
+	overflow:hidden;
+}
+
+
+
+/***** earth-yellow 按钮样式 ******/
+.mSlider_nav_earth_yellow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height:30px;    
+    width: 102%; 
+}
+* html .mSlider_nav_earth_yellow {
+	position: relative;
+	z-index: 1;
+}
+.mSlider_nav_earth_yellow .holder{
+	position: absolute;
+    left:0px;
+}
+* html .mSlider_nav_earth_yellow .holder {
+	position: relative;
+    left:0px;
+    margin-top: -30px;
+}
+
+.mSlider_nav_earth_yellow a {
+    float: left;
+    height: 30px;
+    line-height: 29px;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+	font-size:12px;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.mSlider_nav_earth_yellow a:hover, .mSlider_nav_earth_yellow a:active {
+    text-decoration: none;
+	color:#fff;
+}
+
+.mSlider_nav_earth_yellow a .outter {
+    display: none
+}
+
+.mSlider_nav_earth_yellow a:hover, .mSlider_nav_earth_yellow a.current {
+    position: relative;
+    background-color: #a98a4a;
+	font-weight:bold;
+}
+
+.mSlider_nav_earth_yellow a:hover .outter, .mSlider_nav_earth_yellow a.current .outter {
+    display: block;
+    font: 300 12px / 18px "\5B8B\4F53";
+    position: absolute;
+    overflow: hidden;
+    left: 50%;
+    margin-left: -6px;
+    top: -8px;
+    *top:-13px;
+    color: #a98a4a;
+}
+
+.mSlider_nav_earth_yellow a span{
+	width:120px;
+	height:100%;
+	display:block;
+	overflow:hidden;
+	margin: 0 auto;
+}

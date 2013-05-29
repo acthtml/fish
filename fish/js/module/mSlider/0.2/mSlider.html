@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--	<link media="screen" href="http://css.40017.cn/cn/new_ui/public/style/base_zt.css?v=20110523" type="text/css" rel="stylesheet">-->
+<!--  <link rel="stylesheet" type="text/css" href="http://css.17u.cn/new_ui/comprehensive/style/page_comprehensive/cnindex.css?v=2444ddd" media="all">-->
+<script src="../../../fish.1.2.fwd.js" type="text/javascript"></script>
+ <!--   <script src="mSlider.fwd.js" type="text/javascript"></script>
+    <link href="mSlider.css" rel="stylesheet" type="text/css" />-->
+<title>无标题文档</title>
+<style type="text/css">
+/* 幻灯 */
+.mSlider{display:inline;position:relative;float:left;width:720px;height:280px;overflow:hidden}
+
+
+    .mSlider_con{position:absolute}
+    .mSlider_con ul{margin:0px;padding:0px;list-style-type:none; width:6000px; float:left}
+    .mSlider_con li{ float:left;overflow:hidden;margin:0px;padding:0px}
+
+.mSlider_con img{width:720px;height:280px;border:0px}
+.mSlider_arrow {top: 0;}
+.mSlider_prev {left: 0;}
+.mSlider_next {right: 0;}
+
+/* thumbnail css */
+.mSlider_nav_thumbnail {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+    width: 410px;
+    height: 38px;
+    z-index: 100;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.mSlider_nav_thumbnail li {
+    padding: 5px;
+    float: left;
+    cursor: pointer;
+}
+.mSlider_nav_thumbnail .current {
+	background: aqua;
+}
+.mSlider_nav_thumbnail img {
+    width: 72px;
+    height: 28px;
+    display: block;
+}
+/* end thumbnail css */
+
+/** 半透明按钮样式透明 **/
+/*
+.mSlider_bg{position:absolute;bottom:0;left:0;width:720px;height:30px;background-color:#000;opacity:0.5;filter:alpha(opacity = 50)}
+.mSlider_nav{position:absolute;bottom:0;left:0;width:750px}
+.mSlider_nav a{float:left;width:143px;height:30px;line-height:29px;border-right:1px solid #fff;color:#fff;text-align:center;font-size:12px;text-decoration:none;margin-right:1px}
+.mSlider_nav a:hover,.mSlider_nav a:active{text-decoration:none}
+.mSlider_nav a .outter{display:none}
+.mSlider_nav a:hover,.mSlider_nav a.current{position:relative;background-color:#4a9821;font-weight:bold}
+.mSlider_nav a:hover .outter,.mSlider_nav a.current .outter{display:block;font:300 12px / 18px "\5B8B\4F53";position:absolute;width:12px;overflow:hidden;left:50%;margin-left:-6px;top:-8px;*top:-14px;color:#4a9821}
+*/
+/******** 小方块按钮样式 *********
+.mSlider_nav{list-style-type:none;margin:0;padding:0;overflow:hidden;position:absolute;bottom:10px;right:10px;float:right;z-index:99;}
+.mSlider_nav li{float:left}
+.mSlider_nav a{float:left;width:18px;height:18px;font-size:12px;margin-right:4px;display:inline;text-align:center;cursor:pointer;line-height:18px;background:#fff;color:#666;text-decoration:none;}
+.mSlider_nav a.current{background:#ff6600;font-weight:bold;color:#fff}
+ 幻灯 end */
+</style>
+</head>
+
+<body>
+    <!--幻灯div 1 开始-->
+        <div id="mSlider" class="mSlider">
+          <div class="mSlider_con" style="height: auto; left: 0px;">
+            <ul>
+             <li><div>1</div><a href="#" title="1" small="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170442467710.jpg"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170442467710.jpg"></a></li>
+             <li><div>2</div><a href="#" title="2" small="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170441511802.jpg"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170441511802.jpg"></a></li>
+             <li><div>3</div><a href="#" title="3" small="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170521582561.jpg"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170521582561.jpg"></a></li>
+             <li><div>4</div><a href="#" title="4" small="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/3/1/201203010620193875.jpg"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/3/1/201203010620193875.jpg"></a></li>
+             <li><div>5</div><a href="#" title="5" small="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170520361437.jpg"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170520361437.jpg"></a></li>
+            </ul>
+            </div>
+        <div class="mSlider_bg"></div>
+        <div class="mSlider_nav" >
+            <a class="current" href="javascript:;"><span>丽江自助游</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>醉温泉</span><i class="outter">◆</i></a>
+            <a class=""  href="javascript:;"><span>甜蜜巴厘岛</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>横店双人低至4.5折</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>张公洞双人自助游...</span><i class="outter">◆</i></a>
+        </div>
+        </div>
+    <!--幻灯div 结束-->
+        <!--幻灯div 2 开始-->
+        <div id="mSlider02" class="mSlider">
+          <div class="mSlider_con" style="height: auto; left: 0px;">
+            <ul>
+             <li><a href="#" title="1"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170442467710.jpg"></a></li>
+             <li><a href="#" title="2"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170441511802.jpg"></a></li>
+             <li><a href="#" title="3"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170521582561.jpg"></a></li>
+             <li><a href="#" title="4"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/3/1/201203010620193875.jpg"></a></li>
+             <li><a href="#" title="5"><img src="http://img.17u.cn/ly/cn/img/admin/ziyouxing/2012/2/17/201202170520361437.jpg"></a></li>
+            </ul>
+        </div>
+        <!--<div class="mSlider_bg"></div>
+        <div class="mSlider_nav" >
+            <a class="current" href="javascript:;"><span>丽江自助游</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>醉温泉</span><i class="outter">◆</i></a>
+            <a class=""  href="javascript:;"><span>甜蜜巴厘岛</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>横店双人低至4.5折</span><i class="outter">◆</i></a>
+            <a class="" href="javascript:;"><span>张公洞双人自助游...</span><i class="outter">◆</i></a>
+        </div>-->
+
+        </div>
+    <!--幻灯div 结束-->
+<script type="text/javascript">
+    var slA, slB;
+      fish.admin.branch("debug");
+ fish.admin.pipe.uList.mSlider.v = "0.2";
+    fish.require("anim", function () {
+//        slA = fish.all("#mSlider").mSlider({
+//            // autoScroll: true,
+//            direction: "scrollRight",//scrollLeft,scrollRight,scrollTop,scrollBottom
+//            prevFn: function (a) {
+//                console.log("previous");
+////                console.log(a);
+//            },
+//            nextFn: function (a) {
+////                console.log("next");
+////                console.log(a);
+//            },
+//            //showNav:true
+//            
+//            // ,
+//            // moveTime:1000 //自动播放时间 默认3500 可自定义
+//        },
+//        function () {
+////            console.log("callbacked");
+//        }
+        //    );
+  slA = fish.all("#mSlider").mSlider({
+            //autoScroll: false,
+      // direction: "scrollRight",
+            aniType:"fade",
+            moveTime: 1500, //自动播放时间 默认3500 可自定义
+          
+            beforeNextFn: function (a) {
+                //console.log("beforeNextFn");
+            },
+            beforePrevFn: function (a) {
+               // console.log("beforePrevFn");
+            },
+             prevFn: function (a) {
+                // console.log("prev");
+            },
+            nextFn: function (a) {
+               // console.log("next");
+            }
+        })
+//    slB = fish.all("#mSlider02").mSlider({
+//            //autoScroll: false,
+//             circle: true,
+//             //direction: "scrollBottom",
+//            moveTime: 1500, //自动播放时间 默认3500 可自定义
+//             prevFn: function (a) {
+//                 console.log("previous");
+//            },
+//            nextFn: function (a) {
+//                console.log("next");
+//            }
+//        })
+    })
+
+</script>
+</body>
+</html>

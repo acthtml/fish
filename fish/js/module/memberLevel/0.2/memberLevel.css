@@ -1,0 +1,237 @@
+﻿.level_pic
+{
+    display: block;
+   width:70px;
+   height:25px;
+}
+.lev_1
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 5px;
+}
+.lev_2
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 -26px;
+}
+.lev_3
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 -57px;
+}
+.lev_4
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 -88px;
+}
+.lev_5
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 -119px;
+}
+.leve_pop
+{ position:absolute;}
+.level_pic .relo
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -77px -95px;
+    width:105px;
+    height:26px; 
+    float:left;
+   /* top:20px;
+    margin-left:-70px;*/
+    position:absolute;
+}
+
+.level_pic .level_box
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 0 -320px;
+    width:236px;
+    height:100px;
+}
+
+.level_pic .pic_lef
+{
+    float:left;
+    width:60px;
+    height:85px;
+    margin:7px;
+}
+.level_pic .pic_lef_1
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 15px -234px #FFFFFF;
+    padding:0 8px;
+}
+.level_pic .pic_lef_2
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -60px -154px #FFFFFF;
+    padding:0 8px;
+}
+.level_pic .pic_lef_3
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 15px -154px #FFFFFF;
+    padding:0 8px;
+}
+.level_pic .pic_lef_4
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -50px -234px #FFFFFF;
+    padding:0 8px;
+}
+
+.level_pic .pic_lef_5
+{
+    background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -125px -155px #FFFFFF;
+    padding:0 8px;
+}
+
+.level_pic .pic_rig
+{
+    float:left;
+    margin:7px 0;
+    font-family: 宋体;
+    width:140px;
+}
+.level_pic .my_level
+{
+    line-height: 18px;
+    float:left;
+    padding-top:15px;
+    width:130px;
+}
+.level_pic .my_level_1 {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 60px 16px #FFFFFF;
+}
+.level_pic .my_level_2 {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 60px -17px #FFFFFF;
+}
+.level_pic .my_level_3 {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 60px -48px #FFFFFF;
+}
+.level_pic .my_level_4 {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 60px -79px #FFFFFF;
+}
+.level_pic .my_level_5 {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll 60px -110px #FFFFFF;
+}
+
+
+/*Level 1*/
+.level_pic .privilege_Le1
+{
+     background:url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -195px 0 #FFFFFF;
+}
+/*Level 2*/
+.level_pic .privilege_hotline
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -79px 0 #FFFFFF;
+}
+.level_pic .privilege_email
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -146px 0 #FFFFFF;
+}
+.level_pic .privilege_qiandao
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -79px -22px #FFFFFF
+}
+.level_pic .privilege_member
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -100px 0 #FFFFFF;
+.level_pic }
+.privilege_birthday
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -100px -22px #FFFFFF;
+}
+.level_pic .privilege_monthsilver
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -124px -22px #FFFFFF;
+}
+
+/*Level 3*/
+
+.level_pic .privilege_prior
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -172px -21px #FFFFFF;
+}
+/*Level 4*/
+.level_pic .privilege_tehui
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -195px -21px #FFFFFF;
+}
+.level_pic .privilege_green
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -123px 0px #FFFFFF;
+}
+.level_pic .pic_rig a.link{
+    display: block;
+    width:108px;
+    line-height: 20px;
+    color: #005BB5;
+    text-decoration: none;
+}
+.level_pic .pic_rig a.link:hover{
+    color: #ff6600;
+}
+
+
+/*Level 5*/
+.level_pic .privilege_Custommade
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -146px -22px #FFFFFF;
+}
+.level_pic .privilege_free_hotspring
+
+{
+     background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -171px 0 #FFFFFF;
+}
+
+.level_pic .group_today {
+    height: 16px;
+    overflow: hidden;
+    border: none;
+    width: 144px;
+    padding:10px 0 5px 0;
+}
+.level_pic .group_today .group_center {
+    float: left;
+    height: 16px;
+    overflow: hidden;
+    width: 110px;
+}
+.level_pic .rgt_tgList li
+{
+    float:left;
+    overflow:hidden;
+    height:16px;
+    width:22px;
+
+}
+
+.level_pic .tg_groupTop .group_left
+{
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -78px -60px #FFFFFF;
+    float:left;
+    width:15px;
+    height:14px;
+    cursor:pointer;
+   border-right:1px solid #ddd;
+}
+.level_pic .tg_groupTop .group_right
+{
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -100px -40px #FFFFFF;
+    float:left;
+    width:13px;
+    height:14px;
+    border-right:1px solid #ddd;
+    cursor:pointer;
+}
+.level_pic .tg_groupTop .group_left_bf
+{
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -78px -40px #FFFFFF;
+    float:left;
+    width:14px;
+    height:14px;
+    border-right:1px solid #ddd;
+    cursor:pointer;
+}
+.level_pic .tg_groupTop .group_right_bf {
+    background: url("http://js.40017.cn/cn/public/module/memberLevel/0.1/UserFaithPic.png") no-repeat scroll -101px -60px #FFFFFF;
+    float:left;
+    border-right:1px solid #ddd;
+    width:13px;
+    height:14px;
+    cursor:pointer;
+}

@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> javascript表单验证类</title>
+
+<style type="text/css">
+    .validate_any{
+        width:500px;
+        float:left;
+    }
+    .field{
+        float:left;
+        width:500px;
+    }
+label{
+    width:100px;
+    float:left;
+    text-align:right;
+}
+</style>
+
+<!-- <script type="text/javascript" src="http://js.40017.cn/cn/public/fish.1.2.js?v=2012071207"></script> -->
+    <script src = ../../../fish.1.2.fwd.js ></script>
+
+
+</head>
+
+<body>
+
+<div class="validate_any">  
+<form action="#" name="chkform" id="myform">
+
+<div class="field">  
+	<label for="mobile">手机号码：</label>  
+	<input name="mobile" id="mobile" vType="mobile" vMsg="没有通过验证"  type="text"/>  
+</div>  
+
+  
+<div class="field">  
+	<label for="number">数字：</label>  
+	<input name="number" id="number" vType="number" vMsg="没有通过验证" type="text"/>  
+</div> 
+  
+<div class="field">  
+	<label for="custom">自定义验证：</label>  
+	<input name="custom" id="custom" vType="addfn" vMsg="没有通过验证" vFn ="fn" type="text" />  
+</div>   
+
+<div class="field">  
+	<label for="numEn">英文字母：</label>  
+	<input name="numEn" id="numEn" vType="eng not" vMsg="请输入字母" type="text"/>  
+</div> 
+
+<div class="field">  
+	<label for="english">英文字母：</label>  
+	<input name="english" id="english"  vType="eng" vMsg="没有通过验证" type="text"/>  
+</div> 
+
+
+<div class="field">  
+	<label for="email">邮箱：</label>  
+	<input name="email" id="email"  vType="mail" vMsg="没有通过验证" type="text"/>  
+</div> 
+
+<div class="field">  
+	<label for="url">是否URL：</label>  
+	<input name="url" id="url" vType="url" vMsg="没有通过验证" type="text"/>  
+</div> 
+
+<div class="field">  
+	<label for="currency">货币：</label>  
+	<input name="currency" id="currency" vType="currency" vMsg="没有通过验证" type="text"/>  
+</div>
+
+<div class="field">  
+	<label for="int">整数：</label>  
+	<input name="int" id="int" vType="int" vMsg="没有通过验证" type="text"/>  
+</div>
+
+<div class="field">  
+	<label for="double">双精度：</label>  
+	<input name="double" id="double" vType="double" vMsg="没有通过验证" type="text"/>  
+</div>
+
+<div class="field">  
+	<label for="userName">用户名：</label>  
+	<input name="userName" vType="username" vMsg="用户名错"  id="userName" type="text"/>  
+</div>
+
+<div class="field">  
+	<label for="password">密码：</label>  
+	<input name="password" vType="password" vMsg ="密码错误" id="password" type="text"/>  
+</div>
+
+
+<div class="field">  
+	<label for="year">年：</label>  
+	<input name="year" id="year"  vType="year" vMsg="没有通过验证" type="text"/>  
+</div>
+
+
+
+<div class="field">  
+	<label for="zipcode">邮编：</label>  
+	<input name="zipcode" id="zipcode"  vType="zip" vMsg="没有通过验证" type="text"/>  
+</div>
+
+<div class="field">  
+	<label for="idcard">身份证：</label>  
+	<input name="idcard" id="idcard"  vType="card" vMsg="没有通过验证" type="text"/>  
+</div>
+
+
+
+<div class="field">  
+	<label for="phone">座机：</label>  
+	<input name="phone" id="phone"  vType="phone" vMsg="没有通过验证" type="text"/>  
+</div>
+
+<div class="field">  
+	<label>价格范围：</label>  
+	<select name="select" vType="int" vMsg ="请选择范围" id="select">
+		<option value="">请选择范围</option>
+		<option value="1">100以下</option>
+		<option value="2">100-200</option>
+		<option value="3">200-300</option>
+	
+	</select>
+</div>
+
+
+<div class="field">  
+	<label for="radioname">yes
+	<input name="radioname" id="radioname" type="radio" />
+	</label>
+	<label for="radioname1">no
+	<input name="radioname" id="radioname1" type="radio" />
+	</label>
+</div>
+  
+<input type="submit" id="submit" value="确定" />
+</form>
+</div>  
+
+
+<script type="text/javascript">
+fish.admin.config({
+    verify:{v:0.1,css:1, g:20120821}
+
+})
+
+
+
+function fn(){
+
+	alert("i am called")
+	return true;
+}
+
+var aa, select, custom, numEn;
+fish.require("verify", function(){
+
+
+    aa = fish.all("#password,#zipcode,#number, #userName,#url,#currency,#userName,#english,#email,#currency ,#int,#double,#year,#phone,#idcard,#mobile").verify();
+
+
+    select = fish.all("#select").verify();
+
+    custom = fish.all("#custom").verify();
+    numEn = fish.all("#numEn").verify();
+
+
+})
+
+fish.all("#submit").on("click", function (e) {
+    if (aa.pass) {
+        //
+        console.log("pass");
+    }
+    else {
+        fish.preventDefault(e);
+        console.log("don`t pass");
+    }
+
+})
+
+</script>
+
+</body>
+</html>

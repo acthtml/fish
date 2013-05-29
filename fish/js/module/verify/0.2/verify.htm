@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title> javascript表单验证类</title>
+
+<style type="text/css">
+    .validate_any{
+        width:500px;
+        float:left;
+    }
+    .field{
+        width:500px;
+    }
+label{
+    width:100px;
+    float:left;
+    text-align:right;
+}
+    .seperate{
+        border-bottom:1px solid #ccc ;
+        height: 0;
+        display: block;
+        margin: 50px 0;
+    }
+ol li{
+    border-bottom: 1px dashed #ccc;
+}
+ol li:nth-child(odd){
+    background:#ddd ;
+    padding-bottom: 10px;
+}
+ ol li:last-child{
+     border-bottom:none;
+ }
+.warn{
+    font-size:14px ;
+    color: #f00;
+}
+</style>
+
+ <script type="text/javascript" src="http://js.40017.cn/cn/public/fish.1.2.js?v=2012071207"></script>
+    <!--<script src = ../../../fish.1.2.fwd.js ></script>-->
+    <script>
+        fish.admin.branch("debug");
+        fish.admin.config({
+            verify: { v: 0.2,css:1, g: 2012101601 }
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="validate_any">
+    <h2>验证组件使用说明：</h2>
+    <ol>
+        <li>调用fish.all(selector).verify(param) 在调试时传入{ isDebug:true;}</li>
+        <li>需要进行验证的类型在验证元素的属性：vType 来指定（如："rq eng"）；要进行多个验证的，验证类型之间以空格分隔。</li>
+        <li>支持的验证系统类型:
+            rq:"isRquire",
+            eng:"isEnglish",
+            chn:"isChinese",
+            mail:"isMail",
+            url:"isUrl",
+            currency:"isCurrency",
+            number:"isNumber",
+            int:"isInt",
+            double:"isDouble",
+            username:"isUsername",
+            title:"title",
+            password:"isPassword",
+            qq:"isQQ",
+            // date:"isDate",
+            year:"isYear",
+            month:"isMonth",
+            hour:"isHour",
+            minute:"isMinute",
+            mobile:"isMobile",
+            zip:"isZipcode",
+            card:"isBodycard",
+            ip:"isIP",
+            file:"isLimitFile",
+            image:"isLimitImage",
+            word:"isLimitWord"
+        </li>
+        <li>
+            自定义验证函数 vFn=函数名
+            data-err-fn 自定义函数验证失败时的报错信息
+
+        </li>
+        <li>
+            错误提示信息为在元素上加属性 data-err-验证元素类型。<span class="warn"> 错误提示信息的数量与验证类型的数量要相等</span>
+        </li>
+        <li>
+            验证所有，并获得获得结果。 check方法
+            var validObj= fish.all(selector).verify();
+            validObj.check();
+        </li>
+    </ol>
+    <h2>demo：</h2>
+<form action="#" name="chkform" id="myform">
+    <!-- html5支持的 用h5支持的方式 start-->
+    <div class="field">
+        <label>必填：</label>
+        <input type="text" required="required" class="needValidInput" data-err-rq="必填" data-gap="200"/>
+    </div>
+    <div class="field">
+        <label>电子邮箱：</label>
+        <input  type="email"  class="needValidInput"   required="required" data-err-mail="电子邮箱格式错误" data-err-rq="邮箱必填"/>
+    </div>
+    <div class="field">
+        <label>网址：</label>
+        <input  type="url" required="required" class="needValidInput" data-err-rq="必填"  data-err-url="网址格式错误"/>
+    </div>
+    <div class="field">
+        <label>数字：</label>
+        <input  type="number" required="required" class="needValidInput" data-err-rq="必填"  data-err-number="数字非法"/>
+    </div>
+    <!-- html5支持的 end-->
+    <div class="seperate"></div>
+    <!-- html5支持的 统一用的方式 start-->
+    <div class="field">
+        <label>必填：</label>
+        <input type="text" class="needValidInput" vType="rq" data-err-rq="必填"/>
+    </div>
+    <div class="field">
+        <label>电子邮箱：</label>
+        <input  type="text"  class="needValidInput" vType="rq mail"  data-err-mail="电子邮箱格式错误" data-err-rq="邮箱必填"/>
+    </div>
+    <div class="field">
+        <label>网址：</label>
+        <!--type是url的，rq用组件的-->
+        <input  type="url" class="needValidInput"  vType="rq" data-err-rq="必填"  data-err-url="网址格式错误"/>
+    </div>
+    <div class="field">
+        <label>数字：</label>
+        <input  type="text" required="required" class="needValidInput" vType="rq number"  data-err-rq="必填"  data-err-number="数字非法"/>
+    </div>
+
+
+    <div class="seperate"></div>
+    <!-- html5支持的 不支持的 start-->
+    <div class="field">
+        <label>英文：</label>
+        <input class="needValidInput"   type="text" vType="rq eng"  data-err-rq="必填"  data-err-eng="英文非法"/>
+    </div>
+    <div class="field">
+        <label>中文：</label>
+        <input class="needValidInput"   type="text" vType="rq chn"  data-err-rq="必填"  data-err-chn="中文非法"/>
+    </div>
+    <div class="field">
+        <label>中文或英文：</label>
+        <input class="needValidInput"   type="text" vType="rq enOrCn"  data-err-rq="必填"  data-err-enOrCn="不为中或英法"/>
+    </div>
+    <div class="field">
+        <label>手机号：</label>
+        <input  class="needValidInput"  type="text" vType="rq mobile"  data-err-rq="必填"  data-err-mobile="手机号非法"/>
+    </div>
+    <!--<div class="field">验证日期那正则有问题，以后有脚本来做-->
+        <!--<label>日期：</label>&lt;!&ndash;形如：2012-12-2 注（todo XXX 2012-2-29 通不过验证。。）&ndash;&gt;-->
+        <!--<input  class="needValidInput"  type="text" vType="rq date"  data-err-rq="必填"  data-err-date="日期非法"/>-->
+    <!--</div>-->
+    <div class="field">
+        <label>ip：</label>
+        <input  class="needValidInput"  type="text" vType="rq ip"  data-err-rq="必填"  data-err-ip="ip非法"/>
+    </div>
+    <div class="field">
+        <label>自定义验证：</label>
+        <input  class="needValidInput"  type="text" vType="rq number" vFn="isValGreatThan5" data-err-rq="必填"  data-err-number="数字非法" data-err-fn="数值不能大于5"/>
+    </div>
+
+    <!-- html5支持的 不支持的 end-->
+    <input type="submit" id="submit" value="确定" />
+
+
+</form>
+
+
+
+
+
+<script type="text/javascript">
+
+
+var validObj, select, custom, numEn;
+fish.require("verify", function(){
+
+    validObj = fish.all(".needValidInput").verify({
+        isDebug:true,
+        position:"right",
+        gap:50
+    });
+
+    //validObj.destroy();
+
+});
+function isValGreatThan5(val){
+    val = parseInt(val);
+    if(val>5){
+        return false;
+    }else{
+        return true;
+    }
+}
+
+
+fish.all("#submit").on("click", function (evt) {
+    fish.preventDefault(evt);
+    if (validObj.check()) {
+        //
+       alert("pass");
+    }
+    else {
+        //submit
+        alert("don`t pass");
+    }
+    validObj.resetAllTipLoc();
+})
+
+</script>
+
+</body>
+</html>

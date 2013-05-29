@@ -1,0 +1,175 @@
+﻿.mNotice-wrap {
+    width: 352px;
+    background: #ffffff;
+}
+* html #mNotice-backdrop {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* 普通 mNotice */
+.mNotice-tray {
+    border: 1px solid #bce0ff;
+    padding: 10px;
+    background: #eef7ff;
+    width: 330px;
+}
+.mNotice-head {
+    font-size: 12px;
+    font-weight: bold;
+    height: 19px;
+    line-height: 19px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #cccccc;
+}
+.mNotice-separate {
+    margin-top: 10px;
+}
+.mNotice-close {
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: url(http://js.40017.cn/cn/public/js/smartSearch/search_a.png?v=9) repeat scroll -110px -164px;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.mNotice-normal {
+    color: #005bb5;
+    float: left;
+    cursor: pointer;
+    display: block;
+    height: 19px;
+    line-height: 19px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+.mNotice-hover {
+    color: #ff6600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.mNotice-content {
+    margin-top: 5px;
+    width: 350px;
+    margin-left: -20px;
+}
+/* end 普通 mNotice */
+
+
+/* mTab mNotice */
+.mNotice-mTab {
+    width: 348px;
+    border: 2px solid #bcdfff;
+}
+.mNotice-mTab-head {
+    background: #005bb5;
+    color: #ffffff;
+    height: 27px;
+    line-height: 27px;
+    width: 348px;
+    overflow: hidden;
+    text-indent: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.mNotice-mTab-head-remark {
+    font-weight: normal;
+}
+.mNotice-mTab-wrap {
+    width: 338px;
+    padding: 5px;
+    
+}
+.mNotice-mTab-tab-tray {
+    width: 328px;
+    padding: 0 5px;
+    position: relative;
+    z-index: 1;
+}
+.mNotice-mTab-item {
+    float: left;
+    border: 1px solid #ffffff;
+    border-bottom: 0;
+    padding-bottom: 1px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 0 10px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.mNotice-mTab-tab-tray .current {
+    border: 1px solid #bcdfff;
+    border-bottom: 1px solid #ffffff;
+    cursor: default;
+}
+/* 感谢@张冉的一个样式技巧，使得 tab 的下划线不再需要背景图片 */
+.mNotice-mTab-content {
+    margin-top: -1px;
+    border-top: 1px solid #bcdfff;
+    position: relative;
+    z-index: 0;
+    width: 328px;
+    padding: 5px;
+}
+.mNotice-mTab-content .mNotice-normal {
+    float: left;
+    cursor: pointer;
+    display: block;
+    border: 1px solid #FFFFFF;
+    height: 18px;
+    line-height: 18px;
+    padding: 0 4px;
+    margin-right: 2px;
+    margin-top: 2px;
+    color: #005bb5;
+}
+div.mNotice-mTab-content .mNotice-normal {
+    margin-left: 0;
+}
+.mNotice-title,
+.mNotice-def {
+    float: left;
+}
+.mNotice-title {
+    width: 25px;
+    text-align: center;
+    color: #f60;
+    padding: 1px 0;
+    line-height: 18px;
+}
+.mNotice-def {
+    width: 302px;
+}
+.mNotice-mTab-content .mNotice-hover {
+    background: #eef7ff;
+    border: 1px solid #bbdfff;
+    text-decoration: none;
+}
+/* end mTab mNotice */
+
+
+/* 修复恼人的 ie6 末尾折行问题 普通 mNotice 和 mTab mNotice */
+* html .mNotice-normal {
+    white-space: nowrap;
+}
+*:first-child + html .mNotice-normal {
+    white-space: nowrap;
+}
+
+/* fix ie6 float buggy */
+/* mTab mNotice */
+* html .mNotice-mTab-item,
+* html .mNotice-mTab-content .mNotice-normal,
+* html .mNotice-title,
+* html .mNotice-def {
+    float: left;
+}
+/* 普通 mNotice */
+* html .mNotice-normal {
+    display: inline;
+}
+

@@ -1,0 +1,12 @@
+﻿.cityout{clear:both;position:relative;height:0;}
+.listbox_se {z-index:100; position:absolute;top:0; background-color: #EEF7FF;border: 1px #BBDFFF solid; font-size:12px; }
+.listbox_se dl{}
+.listbox_se dt{padding:0 5px;line-height:24px;color:#333;border-bottom:1px #ddd dashed;font-size:14px;font-weight:700;}
+.listbox_se dd{clear:both;padding:0 5px;color:#005BB5;cursor:pointer;line-height:23px;}
+.listbox_se dd.on{background:#28E;color:#fff}
+.cityhy{float:right;padding:0 5px;height:23px;overflow:hidden;text-align:right;}
+.citypy{float:left; padding:0 5px;height:23px;overflow:hidden;}
+.cityhyword{width:180px;height:23px;overflow:hidden;font-family:微软雅黑;}
+.yellow{color:#ff6600;}
+.iframeie6{width:0;height:0;_width:327px;_height:100px;top:0;left:1px;position:absolute;z-index:-1;_filter:alpha(opacity=0);display:none;_display:block;}
+.none{display:none;}

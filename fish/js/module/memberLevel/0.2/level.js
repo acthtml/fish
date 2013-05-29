@@ -1,0 +1,1 @@
+{"state":100,"name":"15995430487","username":"grace_han","telephone":"4007-777-777","level":"4","spec":["privilege_prior","privilege_hotline", "privilege_email","privilege_tehui","privilege_Custommade","privilege_prior","privilege_hotline", "privilege_email","privilege_tehui","privilege_Custommade","privilege_prior" ], "bulletin":"","level_fraction":"19000"}

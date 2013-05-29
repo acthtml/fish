@@ -1,0 +1,31 @@
+﻿.alert_box{ width:320px; text-align:center; margin:0 auto;}
+.conf_box{ width:480px; text-align:center; margin:0 auto;}
+.alert_content,.conf_content{ margin:20px 10px 30px; text-align:left; word-break:break-all; font-size:14px;}
+.alert_btn,.conf_okbtn,.conf_celbtn {
+    background:url(images/acbg_btn.png) no-repeat 0 0; 
+    height:31px;
+    padding-left:10px;
+    display:inline-block;
+    text-decoration:none;
+    cursor:pointer;
+}
+.alert_btn .mid,.conf_okbtn .mid,.conf_celbtn .mid{
+    height:31px;
+    line-height:31px;
+    float:left;
+    display:inline-block;
+    padding:0 10px;
+    color:#fff;
+    font-weight:bold;
+    font-family:"宋体";
+    font-size:16px;
+}
+.alert_btn .right,.conf_okbtn .right,.conf_celbtn .right{
+    background:url(images/acbg_btn.png) no-repeat -154px 0; 
+    height:31px;
+    width:10px;
+    display:inline-block;
+}
+.alert_btn:hover,.conf_okbtn:hover,.conf_celbtn:hover{background:url(images/acbg_btn.png) no-repeat 0 -33px; text-decoration:none; }
+.alert_btn:hover .right,.conf_okbtn:hover .right,.conf_celbtn:hover .right{background:url(images/acbg_btn.png) no-repeat -154px -33px; }
+.conf_okbtn,.conf_celbtn { margin:0 15px;}

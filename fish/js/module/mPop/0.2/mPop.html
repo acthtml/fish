@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>弹窗</title>
+	<link rel="stylesheet" type="text/css" href="http://css.40017.cn/cn/new_ui/public/style/base_1.2.min.css?u=2012051702" />
+	<link rel="stylesheet" type="text/css" href="mPop.css" />
+	
+	<script type="text/javascript" src="http://js.40017.cn/cn/public/fish.1.2.fwd.js?v=2012081701"></script>
+	<script type="text/javascript" src="mPop.js"></script>
+	
+	<style type="text/css">
+		.bgIframe html{
+			background-color:#000;
+		}
+		body
+		{
+		    height:2000px;
+		    padding-top:500px;
+		    }
+	</style>
+</head>
+<body id="topBody" >
+	<a href="javascript:void(0);" id="mTip1" style="display:block;">弹出框啊</a>
+	<br/>
+	<a href="javascript:void(0);" id="mTip2" style="float:right;">弹出相对框</a>
+	<br/>
+	<a href="javascript:void(0);" id="mTip3">弹出内容框</a>
+    <div style="display: none">
+<div id="tcc" style="width:500px;height:500px;background-color:red;">
+	<h1>标题1</h1>	
+	<h2>标题1</h2>	
+	<h3>标题1</h3>
+</div>
+    </div>
+	<script type="text/javascript">
+	    fish.ready(function () {
+	        fish.all("#mTip1").on("click", function (e) {
+	            fish.stopBubble(e);
+	            fish.mPop({
+                    cover:true,
+                    //  content: fish.dom("#tcc"),  //dom节点或者是文本
+	               iframe:true,
+                   src:"http://www.baidu.com",
+                   width:500,
+                   height:500
+	            }, true)
+	        })
+
+	        fish.all("#mTip2").on("click", function (e) {
+	            fish.stopBubble(e);
+	            fish.mPop({
+	                content: fish.dom("#tcc"),  //dom节点或者是文本
+	                relative: {
+	                    relativeObj: this
+	                }
+	            }, false)
+	        })
+
+	        fish.all("#mTip3").on("click", function (e) {
+	            fish.stopBubble(e);
+	            fish.mPop({
+	                cover: true,
+	                title: "亲亲吧我的宝贝，我要越过高山要越过高山要越过高山要越过高山要越过高山要越过高山",
+	                content: "这是周华健个歌星，你看的出来吗？？？？",  //dom节点或者是文本
+	                width: "200",
+	                height: "200"
+	            },false)
+	        })
+	        
+	    })
+	</script>
+	</body>
+</html>
